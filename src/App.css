@@ -201,5 +201,31 @@ input{
 /* feature container */
 
 .featureContainer{
+  height: 300px;
+  width: 300px;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  position: relative;  
+  border: 1px solid rgba(80, 130, 160, 0.4);
+  transition: 0.3s;
   color: white;
+}
+.featureContainer:hover{
+  box-shadow: 0 0 35px rgba(90, 150, 200, 0.35),inset 0 0 25px rgba(255,255,255,0.05);
+}
+.featureContainer h3{
+  font-size: 1.5rem;
+  margin-bottom: .75rem;
+}
+.featureContainer p{
+  font-size: 1rem;
+  color: #b5b5b5;
+  line-height: 1.6;
+}
+.featureContainer > i{
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  font-size: 1.5rem;
+  color: #4A6E8A;
 }
