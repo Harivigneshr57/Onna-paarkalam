@@ -196,3 +196,10 @@ input{
 .trendingMovie:hover {
   transform: scale(1.05);
 }
+
+
+/* feature container */
+
+.featureContainer{
+  color: white;
+}
