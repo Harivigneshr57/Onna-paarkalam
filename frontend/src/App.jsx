@@ -4,6 +4,7 @@ import './Media.css'
 import Login from './components/Login'
 import TrendingNow from './components/TrendingNow'
 import FeatureComponent from './components/FeatureContainer'
+import FAQ from './components/Faq'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Login></Login>
       <TrendingNow></TrendingNow>
       <FeatureComponent></FeatureComponent>
+      <FAQ></FAQ>
     </>
   )
 }
