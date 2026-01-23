@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scrollbar-width: none;
+}
+
+#root {
+  width: 100vw;
+}
+
+
+
+/* buttons */
+.smallbutton{
+  padding: .65rem 1.5rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;   
+}
+
+.bigbutton{
+  padding: 1.30rem;
+  border-radius: 0rem .5rem .5rem 0rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #517692;
+  color: white;
+  border: none;   
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+
+
+/* flexs */
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+/* header */
+header{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+
+
+/* header - left */
+.logo{
+  width: 4rem;
+}
+
+.name{
+  gap: 1rem;
+}
+
+.logo > img{
+  width: 100%;
+  height: 100%;
+}
+.logo > img:hover{
+  cursor: pointer;
+}
+h2{
+  font-size: 2rem;
+  color: white;
+}
+
+
+
+
+/* header - right */
+
+.headbuttons > :nth-child(1) {
+  background-color: #000000;
+  color: white;
+  border: .2px solid white;
+}
+
+.headbuttons > :nth-child(2) {
+  background-color: #517692;
+  border: .2px solid white;
+  color: white;
+}
+
+.headbuttons{
+  gap: 1rem;
+}
+
+
+
+
+/* login */
+.main{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color : rgba(0, 0, 0, 0.75);
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.login{
+  width: 45%;
+  flex-direction: column;
+  gap: 3rem;
+}
+h1{
+  color: white;
+  font-size: 4rem;
+}
+h6{
+  color: #A3A3A3;
+  font-size: 1.75rem;
+  width: 85%;
+}
+#loginPassword{
+  border-radius: .5rem 0rem 0rem .5rem;
+}
+p{
+  color: gray;
+}
+
+
+
+/* input */
+
+input{
+  padding: 1.25rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #1C1C1C;
+  border: 1px solid gray;
+  color: white;
+}
+
+
+
+/*  Trending Movie Container*/
+
+.trending{
+  background-color: #090908;
+}
+
+.trendingNow{
+  padding: 7rem;
+}
+
+.trendingNow > h2{
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.trendingMovieList{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 75rem;
+  overflow-x: scroll;
+}
+
+.trendingMovie{
+  background: #517692;
+  padding: 1rem;
+  border-radius: .75rem;
+  box-shadow: 0 0 1.5rem rgba(0, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.trendingMovie > img{
+  width: 220px;
+  height: 300px;
+  border-radius: .75rem;
+  object-fit: cover;
+}
+
+.trendingMovie:hover {
+  transform: scale(1.05);
+}
