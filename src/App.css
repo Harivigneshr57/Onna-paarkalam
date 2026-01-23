@@ -10,7 +10,9 @@
   width: 100vw;
 }
 
-
+html{
+  user-select: none;
+}
 
 /* buttons */
 .smallbutton{
@@ -58,6 +60,8 @@ header{
   padding-right: 1rem;
   position: fixed;
   width: 100%;
+  backdrop-filter: blur(10px);
+  Z-INDEX: 999;
 }
 
 
@@ -175,7 +179,8 @@ input{
   gap: 2rem;
   align-items: center;
   width: 75rem;
-  overflow-x: scroll;
+  overflow-x: scroll; 
+  height:25rem;
 }
 
 .trendingMovie{
