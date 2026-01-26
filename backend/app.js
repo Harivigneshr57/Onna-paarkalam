@@ -17,6 +17,29 @@ app.listen(port, (err) => {
     }
     console.log("Server", port);
 })
+app.post("/login",(req,res)=>{
+    const{email,password}=req.body;
+    const sqlQuery="Select * from users where email=? and password=?";
+    db.query(sqlQuery,[email,password],(err,result)=>{
+        if(err){
+            return res.json({
+                message:"Query failed",
+                error:err,
+            })
+        }
+        if(result.length ===0){
+            return res.json({
+                message :"Invalid"
+            })
+        }
+        if(result.length > 0){
+            return res.json({
+                message:"login successful",
+                user:result[0]
+            })
+        }
+    })
+})
 
 app.post("/signup", (req, res) => {
     const { username, email, password } = req.body;
