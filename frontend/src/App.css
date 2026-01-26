@@ -236,4 +236,65 @@ input{
 
 
 
+<<<<<<< HEAD
 /* summa */
+=======
+/* faq container */
+
+.faqContainer{
+  background-color: #090908;
+}
+
+.faq {
+  width: 62.5rem;
+  margin: 5rem auto;
+  text-align: center;
+  color: white;
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.faq-item {
+  background-color: rgb(26, 26, 26);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+}
+
+.faq-icon {
+  font-size: 1.75rem;
+  color: #4A6E8A;
+  transition: 0.3s;
+}
+
+.faq-answer {
+  padding: 1.5rem;
+  color: #b5b5b5;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-item[open] .faq-question{
+  background-color: #252525;
+}
+
+.faq-question:hover{
+  background-color: #252525;
+}
+>>>>>>> 05246ca168ccc8e21c451f0c434ae950540280ce
