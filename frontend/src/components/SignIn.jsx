@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function SignIn() {
     return (
-        <main className="login-page" style={{ backgroundImage: `url(${bgImage})` }}>
+        <main className="login-page flex" style={{ backgroundImage: `url(${bgImage})` }}>
             <div className="top-logo">
                 <img src={logo} alt="Onna Paarkalam Logo" /><span>Onna <b>Paarkalam</b></span>
             </div>

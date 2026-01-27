@@ -386,7 +386,7 @@ footer{
   padding: 1rem;
   position: fixed;
   top: 7rem;
-  right:-15rem;
+  right:-50rem;
   background-color: #2D1B1B;
   border-radius: 1rem;
   border-left: .25rem solid #D63444;
@@ -413,7 +413,7 @@ footer{
   padding: 1rem;
   position: fixed;
   top: 7rem;
-  right:-15rem;
+  right:-50rem;
   background-color: lightgreen;
   border-radius: 1rem;
   border-left: .25rem solid green;
@@ -445,10 +445,6 @@ footer{
   height: 100vh;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
 }
 
 .top-logo {
@@ -478,10 +474,10 @@ footer{
 }
 
 .center-logo img {
-  width: 70px;
+  width: 5rem;
   border-radius: 50%;
-  background: #5a8fb5;
-  padding: 8px;
+  /* background: #5a8fb5; */
+  /* padding: 1rem; */
   margin-bottom: 15px;
 }
 
