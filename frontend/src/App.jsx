@@ -1,12 +1,12 @@
-import Header from './components/Header'
+import Header from './components/Login-SignIn/Header'
 import './App.css'
 import './Media.css'
-import Login from './components/Login'
-import TrendingNow from './components/TrendingNow'
-import FeatureComponent from './components/FeatureContainer'
-import FAQ from './components/Faq'
-import Footer from './components/Footer'
-import SignIn from './components/SignIn'
+import Login from './components/Login-SignIn/Login'
+import TrendingNow from './components/Login-SignIn/TrendingNow'
+import FeatureComponent from './components/Login-SignIn/FeatureContainer'
+import FAQ from './components/Login-SignIn/Faq'
+import Footer from './components/Login-SignIn/Footer'
+import SignIn from './components/Login-SignIn/SignIn'
 
 function App() {
   return (
