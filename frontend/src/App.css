@@ -42,6 +42,15 @@ button:hover{
   background-color: #4A6E8A;
 }
 
+#join:hover{
+  color: #517692;
+  font-weight: 600;
+}
+
+#login-btn:hover{
+  background-color: #517692;
+}
+
 
 
 /* flexs */
@@ -79,10 +88,12 @@ header{
 
 .logo{
   width: 4rem;
+  animation: fromLeft 1.5s ease forwards;
 }
 
 .name{
   gap: 1rem;
+  animation: fromLeft 1.5s ease forwards;
 }
 
 .logo > img{
@@ -117,6 +128,7 @@ h2{
 
 .headbuttons{
   gap: 1rem;
+  animation: fromRight 1.5s ease forwards;
 }
 
 
@@ -136,6 +148,7 @@ h2{
   width: 45%;
   flex-direction: column;
   gap: 3rem;
+  animation: fromBottom 1.5s ease forwards;
 }
 h1{
   color: white;
@@ -195,6 +208,9 @@ input{
   width: 70rem;
   overflow-x: scroll; 
   height:25rem;
+  animation: fromRight 1.5s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
 }
 
 .trendingMovie{
@@ -229,6 +245,9 @@ input{
   border: 1px solid rgba(80, 130, 160, 0.4);
   transition: 0.3s;
   color: white;
+  animation: fromRight 1.5s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
 }
 .featureContainer:hover{
   box-shadow: 0 0 35px rgba(90, 150, 200, 0.35),inset 0 0 25px rgba(255,255,255,0.05);
@@ -451,38 +470,32 @@ footer{
   position: absolute;
   top: 20px;
   left: 30px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #8ecae6;
-  font-size: 18px;
+  gap: 1rem;
+  color: #4A6E8A;
+  font-size: 1rem;
+  animation: fromLeft 1.5s ease forwards;
 }
 
 .top-logo img {
-  width: 32px;
+  width: 2rem;
 }
 
 .login-card {
-  width: 380px;
-  padding: 30px;
-  border-radius: 16px;
-  background: rgba(0,0,0,0.65);
+  padding: 1.5rem 4rem;
+  border-radius: 3rem 1rem;
   backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
   color: white;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: fromBottom 1.5s ease forwards;
 }
 
 .center-logo img {
   width: 5rem;
   border-radius: 50%;
-  /* background: #5a8fb5; */
-  /* padding: 1rem; */
-  margin-bottom: 15px;
-}
-
-.login-card h2 {
-  margin: 0;
 }
 
 .login-card p {
@@ -493,41 +506,73 @@ footer{
 .input-group {
   text-align: left;
   margin-top: 18px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .input-group label {
-  font-size: 12px;
+  font-size: 1rem;
   opacity: 0.6;
-}
-
-.input-group input {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  padding: 8px 0;
-  color: white;
-  outline: none;
+  font-weight: 600;
 }
 
 .login-btn {
-  margin-top: 25px;
+  margin-top: 2rem;
   width: 100%;
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
-  background: #5fa8d3;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1px solid white;
+  background: #4A6E8A;
   color: white;
-  font-size: 15px;
-  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .new-user {
-  margin-top: 15px;
-  font-size: 13px;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .new-user span {
-  color: #5fa8d3;
+  color: #4A6E8A;
   cursor: pointer;
+}
+
+
+
+
+/* animation */
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(7.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-7.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(7.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

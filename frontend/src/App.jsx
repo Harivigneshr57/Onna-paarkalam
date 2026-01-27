@@ -17,7 +17,6 @@ function App() {
       <FeatureComponent></FeatureComponent>
       <FAQ></FAQ>
       <Footer></Footer>
-      <SignIn></SignIn>
     </>
   )
 }
