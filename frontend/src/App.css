@@ -109,8 +109,6 @@ h2{
 }
 
 
-
-
 /* login */
 .main{
   width: 100%;
@@ -236,9 +234,9 @@ input{
 
 
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 /* summa */
-=======
+/* ======= */
 /* faq container */
 
 .faqContainer{
@@ -297,4 +295,4 @@ input{
 .faq-question:hover{
   background-color: #252525;
 }
->>>>>>> 05246ca168ccc8e21c451f0c434ae950540280ce
+/* >>>>>>> 05246ca168ccc8e21c451f0c434ae950540280ce */
