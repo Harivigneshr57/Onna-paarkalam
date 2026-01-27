@@ -17,6 +17,32 @@ app.listen(port, (err) => {
     }
     console.log("Server", port);
 })
+<<<<<<< HEAD
+=======
+app.post("/login",(req,res)=>{
+    const{email,password}=req.body;
+    const sqlQuery="Select * from users where email=? and password=?";
+    db.query(sqlQuery,[email,password],(err,result)=>{
+        if(err){
+            return res.json({
+                message:"Query failed",
+                error:err,
+            })
+        }
+        if(result.length ===0){
+            return res.json({
+                message :"Invalid"
+            })
+        }
+        if(result.length > 0){
+            return res.json({
+                message:"login successful",
+                user:result[0]
+            })
+        }
+    })
+})
+>>>>>>> b54d6aa1a2ddc2fe33ef2f28154dea9894031301
 
 app.post("/signup", (req, res) => {
     const { username, email, password } = req.body;
@@ -25,6 +51,10 @@ app.post("/signup", (req, res) => {
     db.query(checkQuery, [email], (err, result) => {
         if (err) {
             console.log("error", err);
+<<<<<<< HEAD
+=======
+
+>>>>>>> b54d6aa1a2ddc2fe33ef2f28154dea9894031301
             return res.json({
                 error: err
             })
@@ -32,6 +62,10 @@ app.post("/signup", (req, res) => {
         console.log("Hi1");
         if (result.length > 0) {
             console.log("leng");
+<<<<<<< HEAD
+=======
+
+>>>>>>> b54d6aa1a2ddc2fe33ef2f28154dea9894031301
             return res.json({
                 message: "User already exist"
             })
@@ -52,6 +86,14 @@ app.post("/signup", (req, res) => {
                 insertId: result.insertId,
                 affectedRows: result.affectedRows
             });
+<<<<<<< HEAD
         })
     })
 })
+=======
+
+
+        })
+    })
+})
+>>>>>>> b54d6aa1a2ddc2fe33ef2f28154dea9894031301
