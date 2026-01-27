@@ -14,6 +14,7 @@ html{
   user-select: none;
 }
 
+
 /* buttons */
 .smallbutton{
   padding: .65rem 1.5rem;
@@ -37,9 +38,15 @@ button:hover{
   cursor: pointer;
 }
 
+#signUp:hover,#signInPage:hover{
+  background-color: #4A6E8A;
+}
+
 
 
 /* flexs */
+
+
 .flex{
   display: flex;
   align-items: center;
@@ -55,18 +62,21 @@ button:hover{
 
 
 /* header */
+
+
 header{
   padding-left: 1rem;
   padding-right: 1rem;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(10px);
   Z-INDEX: 999;
 }
 
 
 
 /* header - left */
+
+
 .logo{
   width: 4rem;
 }
@@ -92,6 +102,7 @@ h2{
 
 /* header - right */
 
+
 .headbuttons > :nth-child(1) {
   background-color: #000000;
   color: white;
@@ -112,6 +123,8 @@ h2{
 
 
 /* login */
+
+
 .main{
   width: 100%;
   height: 100vh;
@@ -146,6 +159,7 @@ p{
 
 /* input */
 
+
 input{
   padding: 1.25rem;
   border-radius: .5rem;
@@ -159,6 +173,8 @@ input{
 
 
 /*  Trending Movie Container*/
+
+
 
 .trending{
   background-color: #090908;
@@ -178,7 +194,7 @@ input{
   display: flex;
   gap: 2rem;
   align-items: center;
-  width: 75rem;
+  width: 70rem;
   overflow-x: scroll; 
   height:25rem;
 }
@@ -203,6 +219,8 @@ input{
 
 
 /* feature container */
+
+
 
 .featureContainer{
   height: 300px;
@@ -237,6 +255,8 @@ input{
 
 
 /* faq container */
+
+
 
 .faqContainer{
   background-color: #090908;
@@ -293,4 +313,224 @@ input{
 
 .faq-question:hover{
   background-color: #252525;
+}
+
+
+
+/* footer */
+
+
+
+footer{
+  background-color: #090908;
+  color: #ffffff;
+}
+
+.footer-container {
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin: auto 20rem;
+  border-top: 1px solid #222;
+  padding: 3rem;
+}
+
+.footer-brand h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  color: #bbbbbb;
+  font-size: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-links h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  display: block;
+  color: #bbbbbb;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  color: #4A6E8A;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin: auto 20rem;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+}
+
+
+/* notification msg */
+
+
+/* error notification */
+
+#msg{
+  padding: 1rem;
+  position: fixed;
+  top: 7rem;
+  right:-15rem;
+  background-color: #2D1B1B;
+  border-radius: 1rem;
+  border-left: .25rem solid #D63444;
+  border-right: .25rem solid #D63444;
+  flex-direction: column;
+  text-align: start;
+  transition: .3s all ease-in-out;
+}
+
+#msg h1{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#msg.show{
+  right: 2rem;
+}
+
+
+/* success notification */
+
+
+#Msg{
+  padding: 1rem;
+  position: fixed;
+  top: 7rem;
+  right:-15rem;
+  background-color: lightgreen;
+  border-radius: 1rem;
+  border-left: .25rem solid green;
+  border-right: .25rem solid green;
+  flex-direction: column;
+  text-align: start;
+  transition: .3s all ease-in-out;
+}
+
+#Msg h1{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#Msg.show{
+  right: 2rem;
+}
+
+
+
+
+
+
+/* SignIn */
+
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.top-logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8ecae6;
+  font-size: 18px;
+}
+
+.top-logo img {
+  width: 32px;
+}
+
+.login-card {
+  width: 380px;
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(20px);
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.center-logo img {
+  width: 70px;
+  border-radius: 50%;
+  background: #5a8fb5;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.login-card h2 {
+  margin: 0;
+}
+
+.login-card p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.input-group {
+  text-align: left;
+  margin-top: 18px;
+}
+
+.input-group label {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.input-group input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding: 8px 0;
+  color: white;
+  outline: none;
+}
+
+.login-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #5fa8d3;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.new-user {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.new-user span {
+  color: #5fa8d3;
+  cursor: pointer;
 }

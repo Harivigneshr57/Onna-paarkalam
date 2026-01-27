@@ -5,6 +5,8 @@ import Login from './components/Login'
 import TrendingNow from './components/TrendingNow'
 import FeatureComponent from './components/FeatureContainer'
 import FAQ from './components/Faq'
+import Footer from './components/Footer'
+import SignIn from './components/SignIn'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <TrendingNow></TrendingNow>
       <FeatureComponent></FeatureComponent>
       <FAQ></FAQ>
+      <Footer></Footer>
+      <SignIn></SignIn>
     </>
   )
 }

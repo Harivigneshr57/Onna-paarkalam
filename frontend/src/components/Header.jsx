@@ -12,7 +12,7 @@ export default function Header(){
                  </div>
                  <div className="headbuttons flex">
                     <Button className="smallbutton"><i className="fa-solid fa-globe"></i> English</Button>
-                    <Button className="smallbutton">Sign In</Button>
+                    <Button className="smallbutton" id="signInPage">Sign In</Button>
                  </div>
             </header>
         </>
