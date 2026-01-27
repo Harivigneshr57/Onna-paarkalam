@@ -1,4 +1,4 @@
-import bgImage from "../assets/image.png";
+import bgImage from "../../assets/image.png";
 import Button from "./Button";
 import Msg from './ErrorMsg'
 import { useState } from "react";

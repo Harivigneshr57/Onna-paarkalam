@@ -1,5 +1,5 @@
-import bgImage from "../assets/image.png";   // your background
-import logo from "../assets/logo.png";       // your center logo
+import bgImage from "../../assets/image.png";
+import logo from "../../assets/logo.png";
 import Button from "./Button";
 
 export default function SignIn() {
