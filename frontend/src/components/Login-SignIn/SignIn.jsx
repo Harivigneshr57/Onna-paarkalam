@@ -1,12 +1,24 @@
 import bgImage from "../../assets/image.png";
 import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 import Button from "./Button";
+import { useState } from "react";
+
+const [email,setEmail] = useState('');
+function signIn(){
+    if()
+}
 
 export default function SignIn() {
+    let navigate = useNavigate();
+    function navigates(){
+        navigate("/");
+    }
     return (
         <main className="login-page flex" style={{ backgroundImage: `url(${bgImage})` }}>
-            <div className="top-logo">
-                <img src={logo} alt="Onna Paarkalam Logo" /><span>Onna <b>Paarkalam</b></span>
+            <div className="top-logo flex">
+                <img src={logo} alt="Onna Paarkalam Logo" style={{width:"4rem"}} />
+                <h2>Onna <span style={{ color: "#517692" }}>Paarkalam</span></h2>
             </div>
             <div className="login-card">
                 <div className="center-logo">
@@ -16,14 +28,14 @@ export default function SignIn() {
                 <p>Sign in to join the watch party</p>
                 <div className="input-group">
                     <label>Email Address</label>
-                    <input type="email" placeholder="name@example.com" />
+                    <input type="email" placeholder="Enter Your Email" id="signInEmail"/>
                 </div>
                 <div className="input-group">
                     <label>Password</label>
-                    <input type="password" placeholder="********" />
+                    <input type="password" placeholder="********" id="signInPass"/>
                 </div>
-                <Button className="login-btn">Sign In</Button>
-                <p className="new-user">New here? <span>Join the club</span></p>
+                <Button className="login-btn" id="login-btn" onClick={signIn}>Sign In</Button>
+                <p className="new-user">New here? <span id="join" onClick={navigates}>Join the club</span></p>
             </div>
         </main>
     );

@@ -42,11 +42,11 @@ export default function Login(){
     function loginCheck() {
         if (name.length === 0) {
             setStyle(false);
-            errorMsg("Invalid Name!!", "Name should not be Empty");
+            errorMsg("Enter Name!!", "Name should not be Empty");
             return;
         }
       
-        if (!/^[A-Za-z]+$/.test(name)) {
+        if (!/^[A-Za-zs]+$/.test(name)) {
             setStyle(false);
             errorMsg("Invalid Name!!", "Only letters allowed");
             return;

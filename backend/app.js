@@ -42,7 +42,7 @@ app.post("/login",(req,res)=>{
 })
 
 app.post("/signup", (req, res) => {
-    const { username, email, password } = req.body;
+    const { name, email, password } = req.body;
     const checkQuery = "select * from users where email=?";
     console.log("sign");
     db.query(checkQuery, [email], (err, result) => {
@@ -62,9 +62,9 @@ app.post("/signup", (req, res) => {
             })
         }
         console.log("Hi2");
-        console.log(username, email, password);
-        const sqlQuery = "INSERT into users(username, email,password) values(?,?,?)";
-        db.query(sqlQuery, [username, email, password], (err, result) => {
+        console.log(name, email, password);
+        const sqlQuery = "INSERT into users(username, email,password) values(?,?,AES_encrypt(?,'movie'))";
+        db.query(sqlQuery, [name, email, password], (err, result) => {
             if (err) {
                 return res.json({
                     message: "insert failed",
@@ -78,5 +78,65 @@ app.post("/signup", (req, res) => {
                 affectedRows: result.affectedRows
             });
         })
+    })
+})
+
+app.post("/reqfriends",(req,res)=>{
+    const {email}=req.body;
+    const checkQuery = "select id, username, email from users where id IN (select from_id from Friends where status ='pending' and to_id=(select id from users where email=?));";
+    console.log("sign");
+    db.query(checkQuery, [email], (err, result) => {
+        if (err) {
+            console.log("error", err);
+
+            return res.json({
+                error: err
+            })
+        }
+        if (result.length == 0) {
+            console.log("leng");
+
+            return res.json({
+                message: "User did not found"
+            })
+        }
+    
+            console.log("leng");
+
+            return res.json({
+                result
+            })
+        
+    })
+})
+
+
+app.post("/allfriends",(req,res)=>{
+    const {email}=req.body;
+    const whoSendRequestToMeQuery = "select id, username, email from users where id IN (select from_id from Friends where status ='accepted' and to_id=(select id from users where email=?));";
+    const whoWhereIRequestQuery="select id, username, email from users where id IN (select to_id from Friends where status ='accepted' and from_id=(select id from users where email=?));";
+    console.log("sign");
+    db.query(whoSendRequestToMeQuery, [email], (err, result) => {
+        if (err) {
+            console.log("error", err);
+
+            return res.json({
+                error: err
+            })
+        }
+        if (result.length == 0) {
+            console.log("leng");
+
+            return res.json({
+                message: "User did not found"
+            })
+        }
+        
+            console.log("leng");
+
+            return res.json({
+                result
+            })
+        
     })
 })
