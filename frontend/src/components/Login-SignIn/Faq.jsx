@@ -1,4 +1,4 @@
-import Summary from "./Summary";
+import Summary from "../Summary";
 
 export default function FAQ(){
     let data = [["What is Onna Paarkalam?","It is a Collaborative Movie Watching Platform, Where you can see movies with your friends anywhere. It gives we Internet theatre Experience."],
