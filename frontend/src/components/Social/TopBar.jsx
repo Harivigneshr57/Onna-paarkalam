@@ -1,5 +1,8 @@
 export default function TopBar(){
 
+    function addFriend(){
+        
+    }
     return(
         <>
         <div id="socialTopBar">
@@ -7,6 +10,8 @@ export default function TopBar(){
             <div>
                 <input type="text"id="searchInSocial" placeholder="Search your friends or add friend..."></input>
             
+                <input type="text"id="searchInSocial" placeholder="Search friends or rooms ..."></input>
+                <button onClick={addFriend}>Add Friend</button>
             </div>
         </div>
         </>

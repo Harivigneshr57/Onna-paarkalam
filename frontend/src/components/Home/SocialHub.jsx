@@ -1,6 +1,6 @@
-import TopBar from "./TopBar"
-import PendingInvite from "./PendingInvite"
-import AllFriends from "./AllFriends"
+import TopBar from "../Social/TopBar"
+import PendingInvite from "../Social/PendingInvite"
+import AllFriends from "../Social/AllFriends"
 
 export default function SocialHub() {
     return (
@@ -11,6 +11,7 @@ export default function SocialHub() {
                     <TopBar></TopBar>
                     <PendingInvite></PendingInvite>
                     <AllFriends></AllFriends>
+                    <AllFriend></AllFriend>
                 </div>
             </div>
         </>

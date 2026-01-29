@@ -11,10 +11,9 @@ export default function Login(){
     const [style, setStyle] = useState(false);
     const [title, setTitle] = useState("");
     const [error, setError] = useState("");
-    const {user,changeUser} = useContext(UserContext);
 
     async function login() {
-        const response = await fetch("https://onna-paarkalam-1.onrender.com/login", {
+        const response = await fetch("http://localhost:3456/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -32,7 +31,6 @@ export default function Login(){
             errorMsg("User Already Exist!!", "Go to SignIn");
           } else if(data.message == "user inserted"){
             setStyle(true);
-            changeUser(data.insertId,email);
             errorMsg("Login Successful!!","Go to SignIn")
           }
           else{
