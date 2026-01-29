@@ -4,12 +4,10 @@ import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import { useState } from "react";
 
-const [email,setEmail] = useState('');
-function signIn(){
-    if()
-}
-
 export default function SignIn() {
+    const [email,setEmail] = useState('');
+    function signIn(){
+    }
     let navigate = useNavigate();
     function navigates(){
         navigate("/");
