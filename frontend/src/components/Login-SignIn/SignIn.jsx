@@ -4,12 +4,16 @@ import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import { useState } from "react";
 
-const [email,setEmail] = useState('');
-function signIn(){
-    if()
-}
+
 
 export default function SignIn() {
+    const [email,setEmail] = useState('');
+const [password,setPassword] = useState('');
+function signIn(){
+    if(email == 0){
+        
+    }
+}
     let navigate = useNavigate();
     function navigates(){
         navigate("/");
@@ -28,11 +32,11 @@ export default function SignIn() {
                 <p>Sign in to join the watch party</p>
                 <div className="input-group">
                     <label>Email Address</label>
-                    <input type="email" placeholder="Enter Your Email" id="signInEmail"/>
+                    <input type="email" placeholder="Enter Your Email" onChange={(e)=>setEmail(e.target.value)}/>
                 </div>
                 <div className="input-group">
                     <label>Password</label>
-                    <input type="password" placeholder="********" id="signInPass"/>
+                    <input type="password" placeholder="********" onChange={(e)=>setPassword(e.target.value)}/>
                 </div>
                 <Button className="login-btn" id="login-btn" onClick={signIn}>Sign In</Button>
                 <p className="new-user">New here? <span id="join" onClick={navigates}>Join the club</span></p>
