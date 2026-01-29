@@ -2,3 +2,4 @@ node_modules/
 frontend/node_modules/
 .env
 my_changes.patch
+/node_modules
