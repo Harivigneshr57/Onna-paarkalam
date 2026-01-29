@@ -7,7 +7,7 @@ import App from './App.jsx'
 import SignIn from './components/Login-SignIn/SignIn.jsx'
 import SocialHub from './components/Social/SocialHub.jsx'
 import Discover from './components/Discover/Discover.jsx'
-import Home from './components/Home/Home.jsx'
+import Home from '/home/hari-zstk415/Onna-paarkalam/frontend/src/components/Home/Home.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
