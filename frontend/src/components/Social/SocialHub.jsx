@@ -1,6 +1,6 @@
-import TopBar from "../Social/TopBar"
-import PendingInvite from "../Social/PendingInvite"
-import AllFriends from "../Social/AllFriends"
+import TopBar from "./TopBar"
+import PendingInvite from "./PendingInvite"
+import AllFriends from "./AllFriends"
 
 export default function SocialHub() {
     return (
