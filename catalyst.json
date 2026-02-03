@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "targets": [
+      "onna-paarkalam",
+      "auth",
+      "friends"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "react-app",
+    "plugin": "zcatalyst-cli-plugin-react"
+  }
+}

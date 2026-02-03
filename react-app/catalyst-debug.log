@@ -1,0 +1,87 @@
+[debug] [2026-02-02T12:03:09.165Z] : 
+[debug] [2026-02-02T12:03:09.166Z] : ----------------------------------------------------------------------
+[debug] [2026-02-02T12:03:09.167Z] : Command:      /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/node /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/catalyst serve
+[debug] [2026-02-02T12:03:09.167Z] : CLI Version:  1.23.0
+[debug] [2026-02-02T12:03:09.167Z] : Platform:     linux
+[debug] [2026-02-02T12:03:09.167Z] : Node Version: v20.19.6
+[debug] [2026-02-02T12:03:09.167Z] : Time:         Mon Feb 02 2026 17:33:09 GMT+0530 (India Standard Time)
+[debug] [2026-02-02T12:03:09.167Z] : ----------------------------------------------------------------------
+[debug] [2026-02-02T12:03:09.168Z] : 
+[debug] [2026-02-02T12:03:09.512Z] : > authorizing via signed-in user option
+[debug] [2026-02-02T12:03:09.513Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2026-02-02T12:03:09.526Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113 
+
+[debug] [2026-02-02T12:03:09.851Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 02 Feb 2026 12:02:44 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-02T12:03:09.857Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113/environment 
+
+[debug] [2026-02-02T12:03:09.922Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 02 Feb 2026 12:02:44 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-02T12:03:09.978Z] : Build folder already exists, starting cleanup
+[debug] [2026-02-02T12:03:10.001Z] : http port : '3000' is not available. Hence port '3002' will be used instead.
+[debug] [2026-02-02T12:03:10.088Z] : http port : '5000' is not available. Hence port '5002' will be used instead.
+[debug] [2026-02-02T12:03:10.091Z] : No basic functions to add
+[info] [2026-02-02T12:03:11.284Z] : [react-plugin]: Starting the development server...
+
+[info] [2026-02-02T12:03:11.287Z] : 
+[info] [2026-02-02T12:03:11.288Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2026-02-02T12:03:11.289Z] : 
+[info] [2026-02-02T12:03:11.799Z] : Skipping API Gateway rules
+[info] [2026-02-02T12:03:11.802Z] : 
+[info] [2026-02-02T12:03:11.802Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2026-02-02T12:03:11.802Z] : ℹ client[react-app]: http://localhost:3002/app/
+[info] [2026-02-02T12:03:11.802Z] : 
+[info] [2026-02-02T12:03:11.953Z] : [1770033791953]  "GET"  "/app/"
+[info] [2026-02-02T12:03:16.517Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-02T12:03:16.517Z] : [react-plugin]: [eslint] 
+src/index.js
+  Line 5:36:  'Link' is defined but never used         no-unused-vars
+  Line 5:41:  'useNavigate' is defined but never used  no-unused-vars
+  Line 5:54:  'useParams' is defined but never used    no-unused-vars
+[info] [2026-02-02T12:03:16.517Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-02T12:03:16.517Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-02T12:03:16.619Z] : [1770033796618]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-02T12:03:16.781Z] : [1770033796781]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-02T12:03:16.881Z] : [1770033796881]  "GET"  "/app/manifest.json"
+[info] [2026-02-02T12:03:16.883Z] : [1770033796883]  "GET"  "/app/favicon.ico"
+[info] [2026-02-02T12:03:16.911Z] : [1770033796910]  "GET"  "/app/logo192.png"
+[info] [2026-02-02T12:03:29.748Z] : [1770033809748]  "GET"  "/app/home"
+[info] [2026-02-02T12:03:29.793Z] : [1770033809792]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-02T12:03:29.840Z] : [1770033809839]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-02T12:03:29.902Z] : [1770033809902]  "GET"  "/app/manifest.json"
+[info] [2026-02-02T12:03:29.916Z] : [1770033809915]  "GET"  "/app/logo192.png"
+[info] [2026-02-02T12:03:29.935Z] : [1770033809935]  "GET"  "/app/favicon.ico"
+[info] [2026-02-02T12:03:35.576Z] : [1770033815576]  "GET"  "//home"
+[info] [2026-02-02T12:03:36.398Z] : [1770033816398]  "GET"  "/favicon.ico"
+[info] [2026-02-02T12:03:41.142Z] : [1770033821141]  "GET"  "/home"
+[info] [2026-02-02T12:03:43.980Z] : [1770033823980]  "GET"  "/home"
+[info] [2026-02-02T12:03:46.139Z] : [1770033826139]  "GET"  "/home"
+[info] [2026-02-02T12:03:46.968Z] : [1770033826968]  "GET"  "/home"
+[info] [2026-02-02T12:04:16.955Z] : [react-plugin]: Compiling...
+[info] [2026-02-02T12:04:17.396Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-02T12:04:17.396Z] : [react-plugin]: [eslint] 
+src/index.js
+  Line 5:36:  'Link' is defined but never used         no-unused-vars
+  Line 5:41:  'useNavigate' is defined but never used  no-unused-vars
+  Line 5:54:  'useParams' is defined but never used    no-unused-vars
+[info] [2026-02-02T12:04:17.396Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-02T12:04:17.396Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-02T12:04:19.469Z] : [1770033859469]  "GET"  "/home"
+[info] [2026-02-02T12:04:19.982Z] : [1770033859982]  "GET"  "/home"
+[info] [2026-02-02T12:04:22.114Z] : [1770033862113]  "GET"  "/"
+[info] [2026-02-02T12:04:22.120Z] : [1770033862120]  "GET"  "/app/"
+[info] [2026-02-02T12:04:22.224Z] : [1770033862224]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-02T12:04:22.367Z] : [1770033862367]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-02T12:04:22.432Z] : [1770033862432]  "GET"  "/app/manifest.json"
+[info] [2026-02-02T12:04:22.434Z] : [1770033862433]  "GET"  "/app/favicon.ico"
+[info] [2026-02-02T12:04:22.447Z] : [1770033862446]  "GET"  "/app/logo192.png"
+[info] [2026-02-02T12:04:42.985Z] : [1770033882984]  "GET"  "/app/manifest.json"
+[info] [2026-02-02T12:04:43.294Z] : [1770033883294]  "GET"  "/app/static/js/bundle.js.map"
