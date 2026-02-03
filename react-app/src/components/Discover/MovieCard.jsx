@@ -1,0 +1,14 @@
+export default function MovieCard({ movie }) {
+    return (
+        <div className="movie-card">
+            <div className="poster" >
+                <img src={movie.image} alt="Sorry" />
+            </div>
+            <div className="movie-meta">
+                <h4>{movie.title}</h4>
+                <span>{movie.genre} · {movie.year}</span>
+                
+            </div>
+        </div>
+    );
+    }

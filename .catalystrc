@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "30268000000011113",
+      "name": "Onna-Paarkalam",
+      "domain": {
+        "id": "50038425086",
+        "name": "onna-paarkalam-60064679605.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60064679605",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
