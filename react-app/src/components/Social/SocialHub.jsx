@@ -2,6 +2,7 @@ import TopBar from "./TopBar"
 import PendingInvite from "./PendingInvite"
 import AllFriends from "./AllFriends"
 import SideBar from "../Home/SideBar"
+import './social.css'
 
 export default function SocialHub() {
     return (

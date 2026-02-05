@@ -35,15 +35,7 @@
         background: url("../../assets/image.png");
         color: white;
     }
-    #socialTopBar {
-        display: flex;
-        height: 8rem;
-        justify-content: space-between;
-        padding: 2rem;
-        position: fixed;
-        width: 115rem;
-        background: linear-gradient(180deg, black 60%, transparent);
-    }
+
 #discoverContainer{
     display: flex;
     width: 100%;
@@ -89,10 +81,10 @@ div#movieitems {
     font-size: 3rem;
     padding: 0.5rem;
 }
-img {
+.poster img {
     width: 15rem;
     height: 23rem;
 }
-i{
-    font-size: 2rem;
+#join:hover{
+    color: #517692;
 }

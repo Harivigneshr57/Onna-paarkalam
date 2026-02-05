@@ -3,7 +3,14 @@ import Button from "./Button";
 import Msg from './ErrorMsg'
 import { UserContext } from "./UserContext";
 import { useState ,useContext} from "react";
+import { useNavigate } from "react-router-dom";
+
 export default function Login(){
+
+    let navigate = useNavigate();
+    function navigates(){
+        navigate("/app/signIn");
+    }
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -14,33 +21,32 @@ export default function Login(){
     const [error, setError] = useState("");
     const {user,changeUser} = useContext(UserContext);
 
-    async function login() {
-        const response = await fetch("/server/auth/login", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              name,
-              email,
-              password
-            })
-          });
+    async function signup() {
+        let data;
+        const response = await fetch("/server/auth/signup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, password })
+        })
+        .then(res => res.json())
+        .then(dat => data = dat);
       
-          const data = await response.json();
-          console.log(data);
+        console.log(data);
       
-          if(data.message == "User already exist"){
+        if (data.message === "User already exists") {
             setStyle(false);
             errorMsg("User Already Exist!!", "Go to SignIn");
-          } else if(data.message == "user inserted"){
+        } else if (data.message === "Signup successful") {
             setStyle(true);
-            changeUser(data.insertId,email);
-            errorMsg("Login Successful!!","Go to SignIn")
-          }
-          else{
+            errorMsg("Signup Successful!!", "U can SignIn");
+            navigates();
+        } else {
             setStyle(false);
-            errorMsg("Server Busy!!","Please try Later")
-          }
-    }
+            errorMsg("Server Error", "Try again later");
+        }
+      }
+      
+       
 
     function loginCheck() {
         if (name.length === 0) {
@@ -73,7 +79,7 @@ export default function Login(){
             return;
         }
       
-        login();
+        signup();
       }
       
 

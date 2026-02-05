@@ -19,8 +19,8 @@ export default function BigMovie(){
                         A celestial anomaly threatens the fabric of time. Experience the breathtaking visual masterpiece with your circle in real-time.
                     </div>
                     <div className="watchButtons">
-                        <Button icon={<i class="fa-solid fa-users"></i>} id={"friendWatch"}> Watch with Friends</Button>
-                        <Button id={"soloPlay"}>play</Button>
+                        <Button icon={<i className="fa-solid fa-users"></i>} id={"friendWatch"}> Watch with Friends</Button>
+                        <Button icon={<i className="fa-solid fa-play"></i>} id={"soloPlay"}>play</Button>
                     </div>
                 </section>
             </div>

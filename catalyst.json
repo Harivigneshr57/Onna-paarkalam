@@ -1,7 +1,6 @@
 {
   "functions": {
     "targets": [
-      "onna-paarkalam",
       "auth",
       "friends"
     ],

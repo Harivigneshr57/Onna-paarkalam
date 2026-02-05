@@ -6,7 +6,7 @@
 }
 :root{
     --major:#5A83A3;
-    --bg : rgb(4 5 6 / 0.95);
+    --bgg : rgb(4 5 6 / 0.95);
     --white : #ffffff;
 }
 .home{
@@ -26,9 +26,11 @@ aside{
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    background-color: var(--bg);
+    background-color: var(--bgg);
     transition: .4s all ease-in-out;
     z-index: 999;
+    left:0;
+    top:0;
 }
 aside:hover{
     width: 14rem;
@@ -62,7 +64,7 @@ button:hover {
 
 /* button */
 
-aside button{
+aside  button{
     border: none;
     padding: 1rem 1.5rem;
     font-size: 1.25rem;
@@ -73,11 +75,12 @@ aside button{
     border-radius: 2rem;
     transition: .4s all ease-in-out;
     font-weight: 600;
-    background-color: var(--bg);
+    background-color: var(--bgg);
 }
 
 
 /* bigMovie Container */
+
 
 
 .bigMovieContainer{

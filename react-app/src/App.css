@@ -234,6 +234,10 @@ input{
   object-fit: cover;
 }
 
+.homeMovieContainer > img{
+  object-fit: cover;
+}
+
 .trendingMovie:hover {
   transform: scale(1.05);
 }
