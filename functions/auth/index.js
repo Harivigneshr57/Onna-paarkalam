@@ -12,7 +12,7 @@ module.exports = async (req, res) => {
   req.on("end", async () => {
     try {
       const data = JSON.parse(body || "{}");
-      const { email, password, name } = data;
+      const { email, password, username } = data;
 
       const app = catalyst.initialize(req);
       const zcql = app.zcql();
@@ -40,7 +40,7 @@ module.exports = async (req, res) => {
         await usersTable.insertRow({
           email,
           password: hashed,
-          name
+          username
         });
 
         res.writeHead(201, { "Content-Type": "application/json" });
@@ -56,7 +56,7 @@ module.exports = async (req, res) => {
         }
 
         const result = await zcql.executeZCQLQuery(
-          `SELECT ROWID ,email, password, name FROM users WHERE email='${email}'`
+          `SELECT ROWID ,email, password, username FROM users WHERE email='${email}'`
         );
 
         if (result.length === 0) {

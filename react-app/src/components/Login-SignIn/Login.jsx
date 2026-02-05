@@ -12,7 +12,7 @@ export default function Login(){
         navigate("/app/signIn");
     }
 
-    const [name, setName] = useState("");
+    const [username, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [showMsg, setShowMsg] = useState(false);
@@ -26,7 +26,7 @@ export default function Login(){
         const response = await fetch("/server/auth/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, password })
+          body: JSON.stringify({ username, email, password })
         })
         .then(res => res.json())
         .then(dat => data = dat);
@@ -49,15 +49,14 @@ export default function Login(){
        
 
     function loginCheck() {
-        if (name.length === 0) {
+        if (username.length === 0) {
             setStyle(false);
             errorMsg("Enter Name!!", "Name should not be Empty");
             return;
         }
-      
-        if (!/^[A-Za-zs]+$/.test(name)) {
+        if(username.length < 5){
             setStyle(false);
-            errorMsg("Invalid Name!!", "Only letters allowed");
+            errorMsg("Invalid Name!!","Name should contains 5 char atLeast")
             return;
         }
       
@@ -96,7 +95,7 @@ export default function Login(){
                 <div className="login flex">
                     <h1>Watch Movies Together,<span style={{color:"#517692"}}><br/>Perfectly Synced</span></h1>
                     <h6>Host private rooms, share laughs in real-time, and experience premium cinema with friends anywhere.</h6>
-                    <input type="text" placeholder="Enter Your Name" id="loginName" style={{width:"30rem"}}  value={name} onChange={(e) => setName(e.target.value)}/>
+                    <input type="text" placeholder="Enter Your Name" id="loginName" style={{width:"30rem"}}  value={username} onChange={(e) => setName(e.target.value)}/>
                     <input type="email" placeholder="Enter Your Email" id="loginEmail" style={{width:"30rem"}} value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <div className="loginPass flex">
                         <input type="password" placeholder="Enter Your Password" id="loginPassword" style={{width:"25rem"}} value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
