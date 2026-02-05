@@ -1,6 +1,6 @@
 export default function MovieCard({ movie }) {
   return (
-    <div className="movie-card">
+    <div id="movie-card">
       <div className="poster" >
         <img src={movie.image} alt="Sorry" />
       </div>

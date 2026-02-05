@@ -1,105 +1,1659 @@
-[debug] [2026-02-03T11:01:42.639Z] : 
-[debug] [2026-02-03T11:01:42.640Z] : ----------------------------------------------------------------------
-[debug] [2026-02-03T11:01:42.640Z] : Command:      /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/node /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/catalyst serve
-[debug] [2026-02-03T11:01:42.640Z] : CLI Version:  1.23.0
-[debug] [2026-02-03T11:01:42.640Z] : Platform:     linux
-[debug] [2026-02-03T11:01:42.641Z] : Node Version: v20.19.6
-[debug] [2026-02-03T11:01:42.641Z] : Time:         Tue Feb 03 2026 16:31:42 GMT+0530 (India Standard Time)
-[debug] [2026-02-03T11:01:42.641Z] : ----------------------------------------------------------------------
-[debug] [2026-02-03T11:01:42.641Z] : 
-[debug] [2026-02-03T11:01:42.865Z] : > authorizing via signed-in user option
-[debug] [2026-02-03T11:01:42.865Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
-[debug] [2026-02-03T11:01:42.873Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113 
+[debug] [2026-02-05T07:06:15.862Z] : 
+[debug] [2026-02-05T07:06:15.863Z] : ----------------------------------------------------------------------
+[debug] [2026-02-05T07:06:15.863Z] : Command:      /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/node /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/catalyst serve
+[debug] [2026-02-05T07:06:15.863Z] : CLI Version:  1.23.0
+[debug] [2026-02-05T07:06:15.863Z] : Platform:     linux
+[debug] [2026-02-05T07:06:15.863Z] : Node Version: v20.19.6
+[debug] [2026-02-05T07:06:15.864Z] : Time:         Thu Feb 05 2026 12:36:15 GMT+0530 (India Standard Time)
+[debug] [2026-02-05T07:06:15.864Z] : ----------------------------------------------------------------------
+[debug] [2026-02-05T07:06:15.864Z] : 
+[debug] [2026-02-05T07:06:16.074Z] : > authorizing via signed-in user option
+[debug] [2026-02-05T07:06:16.074Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2026-02-05T07:06:16.081Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113 
 
-[debug] [2026-02-03T11:01:43.040Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Tue, 03 Feb 2026 11:01:18 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2026-02-05T07:06:16.236Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 07:05:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[debug] [2026-02-03T11:01:43.048Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113/environment 
+[debug] [2026-02-05T07:06:16.238Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113/environment 
 
-[debug] [2026-02-03T11:01:43.098Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Tue, 03 Feb 2026 11:01:18 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2026-02-05T07:06:16.287Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 07:05:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[debug] [2026-02-03T11:01:43.167Z] : http port : '3000' is not available. Hence port '3007' will be used instead.
-[debug] [2026-02-03T11:01:43.170Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/get-details 
+[debug] [2026-02-05T07:06:16.310Z] : http port : '3000' is not available. Hence port '3002' will be used instead.
+[debug] [2026-02-05T07:06:16.312Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/get-details 
 Query params: {"feature_name":"runtime"}
 
-[debug] [2026-02-03T11:01:43.214Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Tue, 03 Feb 2026 11:01:18 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2026-02-05T07:06:16.361Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 07:05:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[debug] [2026-02-03T11:01:43.219Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113/function 
+[debug] [2026-02-05T07:06:16.362Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113/function 
 Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
 
-[debug] [2026-02-03T11:01:43.269Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Tue, 03 Feb 2026 11:01:18 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+[debug] [2026-02-05T07:06:16.412Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 07:05:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
 
-[debug] [2026-02-03T11:01:43.274Z] : unknown eol undefined hence skipping check
-[debug] [2026-02-03T11:01:43.275Z] : unknown eol undefined hence skipping check
-[debug] [2026-02-03T11:01:43.370Z] : http port : '4000' is not available. Hence port '4007' will be used instead.
-[warn] [2026-02-03T11:01:43.382Z] : ⚠ skipping serve of function [onna-paarkalam] since the function directory(/home/hari-zstk415/Onna-paarkalam/functions/onna-paarkalam) does not exist
-[debug] [2026-02-03T11:01:43.426Z] : http port : '5000' is not available. Hence port '5007' will be used instead.
-[info] [2026-02-03T11:01:44.136Z] : [react-plugin]: Starting the development server...
+[debug] [2026-02-05T07:06:16.413Z] : unknown eol undefined hence skipping check
+[debug] [2026-02-05T07:06:16.413Z] : unknown eol undefined hence skipping check
+[debug] [2026-02-05T07:06:16.604Z] : http port : '4000' is not available. Hence port '4004' will be used instead.
+[debug] [2026-02-05T07:06:16.655Z] : http port : '5000' is not available. Hence port '5002' will be used instead.
+[info] [2026-02-05T07:06:17.310Z] : [react-plugin]: Starting the development server...
 
-[info] [2026-02-03T11:01:44.137Z] : 
-[info] [2026-02-03T11:01:44.137Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
-[info] [2026-02-03T11:01:44.137Z] : 
-[info] [2026-02-03T11:01:44.489Z] : Skipping API Gateway rules
-[info] [2026-02-03T11:01:44.492Z] : 
-[info] [2026-02-03T11:01:44.493Z] :  >>>>>>>>>>>>> Advanced I/O <<<<<<<<<<< 
-[info] [2026-02-03T11:01:44.493Z] : ℹ auth   : http://localhost:3007/server/auth/
-[info] [2026-02-03T11:01:44.493Z] : ℹ friends: http://localhost:3007/server/friends/
-[info] [2026-02-03T11:01:44.493Z] : 
-[info] [2026-02-03T11:01:44.493Z] : 
-[info] [2026-02-03T11:01:44.493Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
-[info] [2026-02-03T11:01:44.493Z] : ℹ client[react-app]: http://localhost:3007/app/
-[info] [2026-02-03T11:01:44.493Z] : 
-[info] [2026-02-03T11:01:44.687Z] : [1770116504687]  "GET"  "/app/"
-[info] [2026-02-03T11:01:44.949Z] : [react-plugin]: Compiled successfully!
-[info] [2026-02-03T11:01:44.949Z] : [react-plugin]: 
-[info] [2026-02-03T11:01:44.950Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2026-02-03T11:01:44.950Z] : [react-plugin]: 
-[info] [2026-02-03T11:01:44.950Z] : [react-plugin]:   Local:            http://localhost:3007/app/
-[info] [2026-02-03T11:01:44.950Z] : [react-plugin]:   On Your Network:  http://10.89.48.203:3007/app/
-[info] [2026-02-03T11:01:44.950Z] : [react-plugin]: 
-[info] [2026-02-03T11:01:44.950Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2026-02-03T11:01:44.950Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2026-02-03T11:01:44.950Z] : [react-plugin]: 
-[info] [2026-02-03T11:01:45.056Z] : [1770116505055]  "GET"  "/src/index.js"
-[info] [2026-02-03T11:01:45.067Z] : [1770116505067]  "GET"  "/app/static/js/bundle.js"
-[info] [2026-02-03T11:01:45.196Z] : [1770116505196]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
-[info] [2026-02-03T11:01:45.233Z] : [1770116505233]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
-[info] [2026-02-03T11:01:45.234Z] : [1770116505234]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
-[info] [2026-02-03T11:01:45.236Z] : [1770116505236]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
-[info] [2026-02-03T11:01:45.240Z] : [1770116505240]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
-[info] [2026-02-03T11:01:45.244Z] : [1770116505244]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
-[info] [2026-02-03T11:01:45.259Z] : [1770116505259]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
-[info] [2026-02-03T11:01:45.264Z] : [1770116505264]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
-[info] [2026-02-03T11:01:45.946Z] : [1770116505946]  "GET"  "/app/src/assets/logo.png"
-[info] [2026-02-03T11:02:32.861Z] : [react-plugin]: Compiling...
-[info] [2026-02-03T11:02:34.210Z] : [react-plugin]: Compiled successfully!
-[info] [2026-02-03T11:02:34.210Z] : [react-plugin]: 
-[info] [2026-02-03T11:02:34.210Z] : [react-plugin]: You can now view react-app in the browser.
-[info] [2026-02-03T11:02:34.210Z] : [react-plugin]: 
-[info] [2026-02-03T11:02:34.210Z] : [react-plugin]:   Local:            http://localhost:3007/app/
-[info] [2026-02-03T11:02:34.210Z] : [react-plugin]:   On Your Network:  http://10.89.48.203:3007/app/
-[info] [2026-02-03T11:02:34.210Z] : [react-plugin]: 
-[info] [2026-02-03T11:02:34.210Z] : [react-plugin]: Note that the development build is not optimized.
-[info] [2026-02-03T11:02:34.211Z] : [react-plugin]: To create a production build, use npm run build.
-[info] [2026-02-03T11:02:34.211Z] : [react-plugin]: 
-[info] [2026-02-03T11:02:34.232Z] : [1770116554231]  "GET"  "/app/main.09bef5c31d772340ea03.hot-update.json"
-[info] [2026-02-03T11:02:34.233Z] : [1770116554233]  "GET"  "/signIn"
-[info] [2026-02-03T11:02:34.242Z] : [1770116554242]  "GET"  "/app/main.09bef5c31d772340ea03.hot-update.js"
-[info] [2026-02-03T11:02:36.597Z] : [1770116556596]  "GET"  "/"
-[info] [2026-02-03T11:02:36.602Z] : [1770116556602]  "GET"  "/app/"
-[info] [2026-02-03T11:02:36.629Z] : [1770116556629]  "GET"  "/src/index.js"
-[info] [2026-02-03T11:02:36.632Z] : [1770116556632]  "GET"  "/app/static/js/bundle.js"
-[info] [2026-02-03T11:02:36.740Z] : [1770116556740]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
-[info] [2026-02-03T11:02:36.768Z] : [1770116556768]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
-[info] [2026-02-03T11:02:36.770Z] : [1770116556770]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
-[info] [2026-02-03T11:02:36.771Z] : [1770116556771]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
-[info] [2026-02-03T11:02:36.772Z] : [1770116556772]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
-[info] [2026-02-03T11:02:36.773Z] : [1770116556773]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
-[info] [2026-02-03T11:02:36.773Z] : [1770116556773]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
-[info] [2026-02-03T11:02:36.794Z] : [1770116556793]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
-[info] [2026-02-03T11:02:36.833Z] : [1770116556833]  "GET"  "/app/src/assets/logo.png"
-[info] [2026-02-03T11:02:38.422Z] : [1770116558422]  "GET"  "/app/src/assets/logo.png"
-[info] [2026-02-03T11:03:13.508Z] : [1770116593508]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T07:06:17.311Z] : 
+[info] [2026-02-05T07:06:17.312Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2026-02-05T07:06:17.312Z] : 
+[info] [2026-02-05T07:06:17.693Z] : Skipping API Gateway rules
+[info] [2026-02-05T07:06:17.695Z] : 
+[info] [2026-02-05T07:06:17.695Z] :  >>>>>>>>>>>>> Advanced I/O <<<<<<<<<<< 
+[info] [2026-02-05T07:06:17.695Z] : ℹ auth   : http://localhost:3002/server/auth/
+[info] [2026-02-05T07:06:17.695Z] : ℹ friends: http://localhost:3002/server/friends/
+[info] [2026-02-05T07:06:17.695Z] : 
+[info] [2026-02-05T07:06:17.696Z] : 
+[info] [2026-02-05T07:06:17.696Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2026-02-05T07:06:17.696Z] : ℹ client[react-app]: http://localhost:3002/app/
+[info] [2026-02-05T07:06:17.696Z] : 
+[info] [2026-02-05T07:06:17.871Z] : [1770275177871]  "GET"  "/app/"
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]: Compiled successfully!
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]: 
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]: 
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]:   Local:            http://localhost:3002/app/
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]:   On Your Network:  http://10.89.48.203:3002/app/
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]: 
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2026-02-05T07:06:18.100Z] : [react-plugin]: 
+[info] [2026-02-05T07:06:18.179Z] : [1770275178179]  "GET"  "/src/index.js"
+[info] [2026-02-05T07:06:18.187Z] : [1770275178187]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T07:06:18.289Z] : [1770275178289]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T07:06:18.319Z] : [1770275178319]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T07:06:18.320Z] : [1770275178320]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T07:06:18.322Z] : [1770275178321]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T07:06:18.323Z] : [1770275178323]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T07:06:18.324Z] : [1770275178324]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T07:06:18.337Z] : [1770275178337]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T07:06:18.352Z] : [1770275178352]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T07:06:18.406Z] : [1770275178406]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T07:06:26.681Z] : [1770275186681]  "POST"  "/server/auth"
+[info] [2026-02-05T07:06:29.412Z] : [1770275189412]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T07:08:29.593Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T07:08:29.917Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T07:08:29.917Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T07:08:37.142Z] : [1770275317141]  "GET"  "/app/"
+[info] [2026-02-05T07:08:37.164Z] : [1770275317164]  "GET"  "/src/index.js"
+[info] [2026-02-05T07:08:37.175Z] : [1770275317175]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T07:08:37.255Z] : [1770275317255]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T07:08:37.257Z] : [1770275317257]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T07:08:37.297Z] : [1770275317297]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T07:08:37.299Z] : [1770275317299]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T07:08:37.302Z] : [1770275317302]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T07:08:37.304Z] : [1770275317303]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T07:08:37.315Z] : [1770275317315]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T07:08:37.318Z] : [1770275317318]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T07:08:37.328Z] : [1770275317327]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T07:08:37.480Z] : [1770275317480]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T07:08:51.111Z] : [1770275331111]  "POST"  "/server/auth"
+[info] [2026-02-05T08:35:17.111Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T08:35:17.654Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T08:35:17.654Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T08:35:20.847Z] : [1770280520847]  "GET"  "/app/"
+[debug] [2026-02-05T08:35:20.848Z] : > refreshing access token <
+[debug] [2026-02-05T08:35:20.850Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2026-02-05T08:35:21.304Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 08:34:55 GMT","content-type":"application/json;charset=UTF-8","content-length":"2442","connection":"keep-alive","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2026-02-05T08:35:21.347Z] : [1770280521346]  "GET"  "/src/index.js"
+[info] [2026-02-05T08:35:21.356Z] : [1770280521356]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T08:35:21.457Z] : [1770280521457]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T08:35:21.489Z] : [1770280521489]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T08:35:21.491Z] : [1770280521490]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T08:35:21.493Z] : [1770280521493]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T08:35:21.511Z] : [1770280521511]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T08:35:21.518Z] : [1770280521517]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T08:35:21.534Z] : [1770280521533]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T08:35:21.548Z] : [1770280521548]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T08:35:21.729Z] : [1770280521728]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:35:39.827Z] : [1770280539827]  "POST"  "/server/auth"
+[info] [2026-02-05T08:35:42.181Z] : [1770280542181]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T08:35:48.948Z] : [1770280548947]  "POST"  "/server/auth"
+[info] [2026-02-05T08:36:04.668Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T08:36:05.101Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T08:36:05.101Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T08:36:14.387Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T08:36:14.778Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T08:36:14.778Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T08:36:17.427Z] : [1770280577427]  "GET"  "/app/"
+[info] [2026-02-05T08:36:17.454Z] : [1770280577454]  "GET"  "/src/index.js"
+[info] [2026-02-05T08:36:17.461Z] : [1770280577461]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T08:36:17.561Z] : [1770280577560]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T08:36:17.597Z] : [1770280577597]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T08:36:17.599Z] : [1770280577598]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T08:36:17.600Z] : [1770280577599]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T08:36:17.600Z] : [1770280577600]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T08:36:17.601Z] : [1770280577601]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T08:36:17.602Z] : [1770280577602]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T08:36:17.623Z] : [1770280577622]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T08:36:17.672Z] : [1770280577672]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:36:37.912Z] : [1770280597912]  "POST"  "/server/auth"
+[info] [2026-02-05T08:36:39.910Z] : [1770280599910]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T08:41:59.338Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T08:42:01.602Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T08:42:01.602Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 15:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 15:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 19:15:  'response' is assigned a value but never used    no-unused-vars
+[info] [2026-02-05T08:42:01.602Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T08:42:01.602Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T08:42:01.633Z] : [1770280921633]  "GET"  "/app/main.c1a1d41fdf83d674df39.hot-update.json"
+[info] [2026-02-05T08:42:01.647Z] : [1770280921647]  "GET"  "/app/main.c1a1d41fdf83d674df39.hot-update.js"
+[info] [2026-02-05T08:42:02.132Z] : [1770280922131]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T08:42:02.134Z] : [1770280922134]  "GET"  "/app/main.c1a1d41fdf83d674df39.hot-update.js.map"
+[info] [2026-02-05T08:42:48.540Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T08:42:48.921Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T08:42:48.921Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 15:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 15:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 19:15:  'response' is assigned a value but never used    no-unused-vars
+[info] [2026-02-05T08:42:48.921Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T08:42:48.921Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T08:42:48.961Z] : [1770280968961]  "GET"  "/app/main.d647bf484b6b346beb3c.hot-update.json"
+[info] [2026-02-05T08:42:48.974Z] : [1770280968974]  "GET"  "/app/main.d647bf484b6b346beb3c.hot-update.js"
+[info] [2026-02-05T08:42:48.991Z] : [1770280968991]  "GET"  "/app/main.d647bf484b6b346beb3c.hot-update.js.map"
+[info] [2026-02-05T08:44:19.905Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T08:44:20.272Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T08:44:20.272Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 15:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 15:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 19:15:  'response' is assigned a value but never used    no-unused-vars
+[info] [2026-02-05T08:44:20.272Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T08:44:20.272Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T08:44:20.330Z] : [1770281060330]  "GET"  "/app/main.467bae0e4d28bcb8ccee.hot-update.json"
+[info] [2026-02-05T08:44:20.348Z] : [1770281060348]  "GET"  "/app/main.467bae0e4d28bcb8ccee.hot-update.js"
+[info] [2026-02-05T08:44:20.386Z] : [1770281060386]  "GET"  "/app/main.467bae0e4d28bcb8ccee.hot-update.js.map"
+[info] [2026-02-05T08:46:06.304Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T08:46:06.596Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T08:46:06.596Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+[info] [2026-02-05T08:46:06.596Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T08:46:06.597Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T08:46:06.637Z] : [1770281166637]  "GET"  "/app/main.847f4df143e7ece91801.hot-update.json"
+[info] [2026-02-05T08:46:06.655Z] : [1770281166655]  "GET"  "/app/main.847f4df143e7ece91801.hot-update.js"
+[info] [2026-02-05T08:46:06.673Z] : [1770281166672]  "GET"  "/app/main.847f4df143e7ece91801.hot-update.js.map"
+[info] [2026-02-05T08:46:08.498Z] : [1770281168498]  "GET"  "/app/"
+[info] [2026-02-05T08:46:08.535Z] : [1770281168535]  "GET"  "/src/index.js"
+[info] [2026-02-05T08:46:08.546Z] : [1770281168546]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T08:46:08.708Z] : [1770281168707]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T08:46:08.710Z] : [1770281168710]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T08:46:08.763Z] : [1770281168763]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T08:46:08.765Z] : [1770281168764]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T08:46:08.765Z] : [1770281168765]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T08:46:08.766Z] : [1770281168766]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T08:46:08.783Z] : [1770281168783]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T08:46:08.785Z] : [1770281168785]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T08:46:08.795Z] : [1770281168795]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T08:46:08.871Z] : [1770281168870]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:46:28.577Z] : [1770281188577]  "POST"  "/server/auth"
+[info] [2026-02-05T08:46:29.918Z] : [1770281189917]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:46:48.746Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T08:46:49.019Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T08:46:49.019Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+[info] [2026-02-05T08:46:49.020Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T08:46:49.020Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T08:46:49.039Z] : [1770281209039]  "GET"  "/app/main.7b553caa8a4baab13a35.hot-update.json"
+[info] [2026-02-05T08:46:49.052Z] : [1770281209051]  "GET"  "/app/main.7b553caa8a4baab13a35.hot-update.js"
+[info] [2026-02-05T08:48:01.449Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T08:48:01.734Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T08:48:01.735Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 41:20:  'showMsg' is not defined  no-undef
+  Line 41:36:  'title' is not defined    no-undef
+  Line 41:50:  'error' is not defined    no-undef
+  Line 41:64:  'style' is not defined    no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T08:48:38.466Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T08:48:38.711Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T08:48:38.711Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 6:8:   'Msg' is defined but never used                no-unused-vars
+  Line 9:12:  'email' is assigned a value but never used     no-unused-vars
+  Line 9:18:  'setEmail' is assigned a value but never used  no-unused-vars
+[info] [2026-02-05T08:48:38.711Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T08:48:38.711Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T08:48:38.726Z] : [1770281318726]  "GET"  "/app/main.56845db17efaa53bb5a3.hot-update.json"
+[info] [2026-02-05T08:48:38.741Z] : [1770281318740]  "GET"  "/app/main.56845db17efaa53bb5a3.hot-update.js"
+[info] [2026-02-05T08:48:38.757Z] : [1770281318757]  "GET"  "/app/main.eda1dafb68fa70d3e0ac.hot-update.json"
+[info] [2026-02-05T08:48:38.771Z] : [1770281318770]  "GET"  "/app/main.eda1dafb68fa70d3e0ac.hot-update.js"
+[info] [2026-02-05T08:48:42.595Z] : [1770281322595]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T08:48:42.598Z] : [1770281322598]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T08:48:42.607Z] : [1770281322607]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T08:48:42.610Z] : [1770281322609]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T08:48:42.614Z] : [1770281322614]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:48:42.618Z] : [1770281322618]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T08:48:42.622Z] : [1770281322622]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T08:51:45.647Z] : [1770281505647]  "GET"  "/app/"
+[info] [2026-02-05T08:51:45.675Z] : [1770281505675]  "GET"  "/src/index.js"
+[info] [2026-02-05T08:51:45.689Z] : [1770281505689]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T08:51:45.841Z] : [1770281505841]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T08:51:45.878Z] : [1770281505878]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T08:51:45.880Z] : [1770281505880]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T08:51:45.882Z] : [1770281505881]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T08:51:45.885Z] : [1770281505885]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T08:51:45.902Z] : [1770281505902]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T08:51:45.908Z] : [1770281505908]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T08:51:45.921Z] : [1770281505921]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T08:51:46.094Z] : [1770281506094]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:51:48.199Z] : [1770281508199]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T08:52:10.676Z] : [1770281530676]  "POST"  "/server/auth"
+[info] [2026-02-05T08:52:11.117Z] : [1770281531117]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:54:33.115Z] : [1770281673114]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T08:54:33.117Z] : [1770281673116]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T08:54:33.130Z] : [1770281673130]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T08:54:33.133Z] : [1770281673133]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T08:54:33.138Z] : [1770281673137]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T08:54:33.145Z] : [1770281673145]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:54:33.156Z] : [1770281673156]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T08:54:40.514Z] : [1770281680513]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:54:52.789Z] : [1770281692788]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:55:00.686Z] : [1770281700685]  "GET"  "/app/home"
+[info] [2026-02-05T08:55:00.737Z] : [1770281700737]  "GET"  "/src/index.js"
+[info] [2026-02-05T08:55:00.745Z] : [1770281700745]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T08:55:00.878Z] : [1770281700877]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T08:55:00.917Z] : [1770281700917]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-05T08:55:00.928Z] : [1770281700928]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T08:55:00.930Z] : [1770281700930]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T08:55:00.932Z] : [1770281700932]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T08:55:00.941Z] : [1770281700941]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T08:55:00.953Z] : [1770281700953]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T08:55:00.958Z] : [1770281700958]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T08:55:00.975Z] : [1770281700975]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-05T08:55:00.977Z] : [1770281700977]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-05T08:55:00.979Z] : [1770281700979]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T08:55:00.991Z] : [1770281700991]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-05T08:55:01.004Z] : [1770281701004]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-05T08:55:01.014Z] : [1770281701014]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-05T08:55:01.021Z] : [1770281701021]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-05T08:55:01.147Z] : [1770281701147]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:55:10.814Z] : [1770281710813]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T08:57:13.040Z] : [1770281833040]  "GET"  "/app/"
+[info] [2026-02-05T08:57:13.164Z] : [1770281833164]  "GET"  "/src/index.js"
+[info] [2026-02-05T08:57:13.167Z] : [1770281833167]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T08:57:13.310Z] : [1770281833310]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T08:57:13.359Z] : [1770281833359]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T08:57:13.361Z] : [1770281833361]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T08:57:13.362Z] : [1770281833362]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T08:57:13.364Z] : [1770281833363]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T08:57:13.366Z] : [1770281833366]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T08:57:13.389Z] : [1770281833388]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T08:57:13.400Z] : [1770281833400]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T08:57:13.454Z] : [1770281833454]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:57:19.535Z] : [1770281839535]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T08:57:36.746Z] : [1770281856746]  "POST"  "/server/auth"
+[info] [2026-02-05T08:57:42.156Z] : [1770281862156]  "POST"  "/server/auth"
+[info] [2026-02-05T08:57:43.198Z] : [1770281863198]  "POST"  "/server/auth"
+[info] [2026-02-05T08:57:43.674Z] : [1770281863674]  "POST"  "/server/auth"
+[info] [2026-02-05T08:57:44.812Z] : [1770281864811]  "POST"  "/server/auth"
+[info] [2026-02-05T08:57:46.014Z] : [1770281866014]  "POST"  "/server/auth"
+[info] [2026-02-05T08:57:49.334Z] : [1770281869334]  "POST"  "/server/auth"
+[info] [2026-02-05T08:57:55.869Z] : [1770281875869]  "POST"  "/server/auth"
+[info] [2026-02-05T08:57:58.664Z] : [1770281878664]  "POST"  "/server/auth"
+[info] [2026-02-05T08:58:01.294Z] : [1770281881293]  "POST"  "/server/auth"
+[info] [2026-02-05T08:58:02.688Z] : [1770281882688]  "POST"  "/server/auth"
+[info] [2026-02-05T08:58:03.536Z] : [1770281883536]  "POST"  "/server/auth"
+[info] [2026-02-05T08:58:05.759Z] : [1770281885759]  "POST"  "/server/auth"
+[info] [2026-02-05T08:58:08.396Z] : [1770281888396]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:58:11.992Z] : [1770281891991]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T08:58:59.088Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T08:58:59.629Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T08:58:59.630Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T08:59:51.792Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T08:59:52.352Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T08:59:52.352Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T08:59:55.435Z] : [1770281995435]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:00:00.837Z] : [1770282000837]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:00:17.745Z] : [1770282017745]  "GET"  "/app/home"
+[info] [2026-02-05T09:00:17.791Z] : [1770282017791]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:00:17.799Z] : [1770282017799]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:00:17.934Z] : [1770282017934]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:00:18.002Z] : [1770282018002]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-05T09:00:18.007Z] : [1770282018007]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:00:18.009Z] : [1770282018009]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T09:00:18.011Z] : [1770282018011]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T09:00:18.015Z] : [1770282018015]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T09:00:18.028Z] : [1770282018028]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T09:00:18.036Z] : [1770282018035]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T09:00:18.056Z] : [1770282018056]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T09:00:18.059Z] : [1770282018059]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-05T09:00:18.061Z] : [1770282018061]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-05T09:00:18.067Z] : [1770282018066]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-05T09:00:18.070Z] : [1770282018070]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-05T09:00:18.083Z] : [1770282018083]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-05T09:00:18.086Z] : [1770282018085]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-05T09:00:18.134Z] : [1770282018133]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:00:47.638Z] : [1770282047637]  "GET"  "/app/"
+[info] [2026-02-05T09:00:47.747Z] : [1770282047747]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:00:47.750Z] : [1770282047750]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:00:47.828Z] : [1770282047828]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:00:47.853Z] : [1770282047853]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:00:47.855Z] : [1770282047855]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T09:00:47.857Z] : [1770282047857]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T09:00:47.862Z] : [1770282047862]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T09:00:47.875Z] : [1770282047875]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T09:00:47.879Z] : [1770282047879]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T09:00:47.893Z] : [1770282047893]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T09:00:47.946Z] : [1770282047946]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:07:54.477Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T09:07:55.032Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T09:07:55.032Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T09:08:42.072Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:08:42.401Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:08:42.401Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 6:8:    'Msg' is defined but never used                   no-unused-vars
+  Line 9:12:   'email' is assigned a value but never used        no-unused-vars
+  Line 9:18:   'setEmail' is assigned a value but never used     no-unused-vars
+  Line 10:12:  'password' is assigned a value but never used     no-unused-vars
+  Line 10:21:  'setPassword' is assigned a value but never used  no-unused-vars
+[info] [2026-02-05T09:08:42.401Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:08:42.401Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:08:42.455Z] : [1770282522455]  "GET"  "/app/main.d8c364fdc66dd4f6b655.hot-update.json"
+[info] [2026-02-05T09:08:42.470Z] : [1770282522469]  "GET"  "/app/main.d8c364fdc66dd4f6b655.hot-update.js"
+[info] [2026-02-05T09:11:32.287Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:11:32.663Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:11:32.664Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 33:108:  'e' is not defined  no-undef
+  Line 37:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:12:36.366Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:12:36.668Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:12:36.668Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 80:108:  'e' is not defined  no-undef
+  Line 84:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:12:45.368Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:12:45.614Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:12:45.615Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 80:108:  'e' is not defined  no-undef
+  Line 84:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:13:23.205Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:13:23.439Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:13:23.439Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 80:108:  'e' is not defined  no-undef
+  Line 84:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:14:15.856Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:14:16.058Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:14:16.059Z] : [react-plugin]: SyntaxError: /home/hari-zstk415/Onna-paarkalam/react-app/src/components/Login-SignIn/SignIn.jsx: Unexpected token (32:19)
+  30 |           console.log("Signin response:", data);
+  31 |       
+> 32 |           if (data.) {
+     |                    ^
+  33 |             // backend error messages
+  34 |             alert(data.message || "Login failed");
+  35 |             return;
+[info] [2026-02-05T09:15:15.030Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:15:15.135Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:15:15.136Z] : [react-plugin]: SyntaxError: /home/hari-zstk415/Onna-paarkalam/react-app/src/components/Login-SignIn/SignIn.jsx: Unexpected token (32:19)
+  30 |           console.log("Signin response:", data);
+  31 |       
+> 32 |           if (data.) {
+     |                    ^
+  33 |             // backend error messages
+  34 |             alert(data.message || "Login failed");
+  35 |             return;
+[info] [2026-02-05T09:20:59.341Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:20:59.455Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:20:59.456Z] : [react-plugin]: SyntaxError: /home/hari-zstk415/Onna-paarkalam/react-app/src/components/Login-SignIn/SignIn.jsx: Unexpected token (32:19)
+  30 |           console.log("Signin response:", data);
+  31 |       
+> 32 |           if (data.) {
+     |                    ^
+  33 |             // backend error messages
+  34 |             alert(data.message || "Login failed");
+  35 |             return;
+[info] [2026-02-05T09:21:20.049Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:21:20.163Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:21:20.163Z] : [react-plugin]: SyntaxError: /home/hari-zstk415/Onna-paarkalam/react-app/src/components/Login-SignIn/SignIn.jsx: Unexpected token (32:19)
+  30 |           console.log("Signin response:", data);
+  31 |       
+> 32 |           if (data.) {
+     |                    ^
+  33 |             // backend error messages
+  34 |             alert(data.message || "Login failed");
+  35 |             return;
+[info] [2026-02-05T09:21:57.651Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:21:57.752Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:21:57.752Z] : [react-plugin]: SyntaxError: /home/hari-zstk415/Onna-paarkalam/react-app/src/components/Login-SignIn/SignIn.jsx: Unexpected token (32:19)
+  30 |           console.log("Signin response:", data);
+  31 |       
+> 32 |           if (data.) {
+     |                    ^
+  33 |             // backend error messages
+  34 |             alert(data.message || "Login failed");
+  35 |             return;
+[info] [2026-02-05T09:22:48.088Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:22:48.287Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:22:48.287Z] : [react-plugin]: SyntaxError: /home/hari-zstk415/Onna-paarkalam/react-app/src/components/Login-SignIn/SignIn.jsx: Unexpected token (36:19)
+  34 |           console.log("Signin response:", data);
+  35 |       
+> 36 |           if (data.) {
+     |                    ^
+  37 |             // backend error messages
+  38 |             alert(data.message || "Login failed");
+  39 |             return;
+[info] [2026-02-05T09:26:17.974Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:26:18.092Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:26:18.092Z] : [react-plugin]: SyntaxError: /home/hari-zstk415/Onna-paarkalam/react-app/src/components/Login-SignIn/SignIn.jsx: Unexpected token (36:19)
+  34 |           console.log("Signin response:", data);
+  35 |       
+> 36 |           if (data.) {
+     |                    ^
+  37 |             // backend error messages
+  38 |             alert(data.message || "Login failed");
+  39 |             return;
+[info] [2026-02-05T09:26:51.824Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:26:52.214Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:26:52.215Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 97:108:   'e' is not defined  no-undef
+  Line 101:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:29:08.468Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:29:08.865Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:29:08.865Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 96:108:   'e' is not defined  no-undef
+  Line 100:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:29:37.555Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:29:37.830Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:29:37.830Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 97:108:   'e' is not defined  no-undef
+  Line 101:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:32:53.157Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:32:53.488Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:32:53.488Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 110:108:  'e' is not defined  no-undef
+  Line 114:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:34:46.169Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:34:46.478Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:34:46.478Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 104:108:  'e' is not defined  no-undef
+  Line 108:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:35:02.633Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:35:02.841Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:35:02.841Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 104:108:  'e' is not defined  no-undef
+  Line 108:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:35:15.396Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:35:15.579Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:35:15.579Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 104:108:  'e' is not defined  no-undef
+  Line 108:105:  'e' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:36:08.895Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:36:09.119Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:36:09.120Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 18:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 36:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 41:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 46:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 77:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:36:09.120Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:36:09.120Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:36:09.135Z] : [1770284169134]  "GET"  "/app/main.3baac096ad09f23ca755.hot-update.json"
+[debug] [2026-02-05T09:36:09.135Z] : > refreshing access token <
+[debug] [2026-02-05T09:36:09.142Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2026-02-05T09:36:09.464Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 09:35:43 GMT","content-type":"application/json;charset=UTF-8","content-length":"2442","connection":"keep-alive","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2026-02-05T09:36:09.483Z] : [1770284169483]  "GET"  "/app/main.3baac096ad09f23ca755.hot-update.js"
+[info] [2026-02-05T09:36:09.492Z] : [1770284169492]  "GET"  "/app/main.d8bc3a3c0b3c3193ffcd.hot-update.json"
+[info] [2026-02-05T09:36:09.500Z] : [1770284169500]  "GET"  "/app/main.d8bc3a3c0b3c3193ffcd.hot-update.js"
+[info] [2026-02-05T09:36:09.511Z] : [1770284169511]  "GET"  "/app/main.60a0a1dfd79bea1e4599.hot-update.json"
+[info] [2026-02-05T09:36:09.519Z] : [1770284169519]  "GET"  "/app/main.60a0a1dfd79bea1e4599.hot-update.js"
+[info] [2026-02-05T09:36:09.530Z] : [1770284169530]  "GET"  "/app/main.c9cd8d967c568ae61dde.hot-update.json"
+[info] [2026-02-05T09:36:09.538Z] : [1770284169538]  "GET"  "/app/main.c9cd8d967c568ae61dde.hot-update.js"
+[info] [2026-02-05T09:36:09.548Z] : [1770284169548]  "GET"  "/app/main.2d58035c2f76d93ad2f7.hot-update.json"
+[info] [2026-02-05T09:36:09.557Z] : [1770284169557]  "GET"  "/app/main.2d58035c2f76d93ad2f7.hot-update.js"
+[info] [2026-02-05T09:36:09.567Z] : [1770284169567]  "GET"  "/app/main.939c29f916d4d5491cbe.hot-update.json"
+[info] [2026-02-05T09:36:09.575Z] : [1770284169575]  "GET"  "/app/main.939c29f916d4d5491cbe.hot-update.js"
+[info] [2026-02-05T09:36:09.583Z] : [1770284169583]  "GET"  "/app/main.72b933934ab8e311e8c5.hot-update.json"
+[info] [2026-02-05T09:36:09.592Z] : [1770284169591]  "GET"  "/app/main.72b933934ab8e311e8c5.hot-update.js"
+[info] [2026-02-05T09:36:09.601Z] : [1770284169601]  "GET"  "/app/main.8c134c49d582ed9d60c0.hot-update.json"
+[info] [2026-02-05T09:36:09.609Z] : [1770284169609]  "GET"  "/app/main.8c134c49d582ed9d60c0.hot-update.js"
+[info] [2026-02-05T09:36:09.619Z] : [1770284169619]  "GET"  "/app/main.c929396384b63c64a2c9.hot-update.json"
+[info] [2026-02-05T09:36:09.627Z] : [1770284169627]  "GET"  "/app/main.c929396384b63c64a2c9.hot-update.js"
+[info] [2026-02-05T09:36:09.637Z] : [1770284169637]  "GET"  "/app/main.9248f663118cdfcfd46e.hot-update.json"
+[info] [2026-02-05T09:36:09.645Z] : [1770284169645]  "GET"  "/app/main.9248f663118cdfcfd46e.hot-update.js"
+[info] [2026-02-05T09:36:09.654Z] : [1770284169654]  "GET"  "/app/main.600790040aadcfbe7b05.hot-update.json"
+[info] [2026-02-05T09:36:09.663Z] : [1770284169663]  "GET"  "/app/main.600790040aadcfbe7b05.hot-update.js"
+[info] [2026-02-05T09:36:09.672Z] : [1770284169672]  "GET"  "/app/main.5c300ac161581ef36482.hot-update.json"
+[info] [2026-02-05T09:36:09.681Z] : [1770284169681]  "GET"  "/app/main.5c300ac161581ef36482.hot-update.js"
+[info] [2026-02-05T09:36:09.693Z] : [1770284169693]  "GET"  "/app/main.c49ee4b19988a1e0269f.hot-update.json"
+[info] [2026-02-05T09:36:09.703Z] : [1770284169702]  "GET"  "/app/main.c49ee4b19988a1e0269f.hot-update.js"
+[info] [2026-02-05T09:39:14.949Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:39:15.170Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:39:15.170Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 19:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 37:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 42:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 47:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 78:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 83:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:39:15.170Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:39:15.170Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:39:15.186Z] : [1770284355186]  "GET"  "/app/main.0000ca97c5a0252c34bc.hot-update.json"
+[info] [2026-02-05T09:39:15.195Z] : [1770284355194]  "GET"  "/app/main.0000ca97c5a0252c34bc.hot-update.js"
+[info] [2026-02-05T09:39:22.086Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:39:22.295Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:39:22.295Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 15:31:  'useContext' is not defined   no-undef
+  Line 15:42:  'UserContext' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:40:44.257Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:40:44.451Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:40:44.451Z] : [react-plugin]: SyntaxError: /home/hari-zstk415/Onna-paarkalam/react-app/src/components/Login-SignIn/SignIn.jsx: Unexpected token (49:28)
+  47 |           if(data.message == "Login successful"){
+  48 |             setStyle(true);
+> 49 |             changeUser(data.,data.email);
+     |                             ^
+  50 |             errorMsg("Login Successful!!","");
+  51 |             home();
+  52 |           }
+[info] [2026-02-05T09:41:11.856Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T09:41:12.433Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T09:41:12.434Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T09:42:26.256Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T09:42:26.777Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T09:42:26.777Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T09:42:33.497Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:42:33.720Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:42:33.720Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 15:31:  'useContext' is not defined   no-undef
+  Line 15:42:  'UserContext' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:42:45.386Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:42:45.559Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:42:45.559Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 15:31:  'useContext' is not defined   no-undef
+  Line 15:42:  'UserContext' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:43:13.840Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:43:14.011Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T09:43:14.011Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:31:  'useContext' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T09:43:33.109Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:43:33.374Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:43:33.374Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 20:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 38:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 43:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 48:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 81:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 86:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:43:33.374Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:43:33.374Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:43:33.399Z] : [1770284613399]  "GET"  "/app/main.1817d56b10a3691b1c34.hot-update.json"
+[info] [2026-02-05T09:43:33.410Z] : [1770284613410]  "GET"  "/app/main.1817d56b10a3691b1c34.hot-update.js"
+[info] [2026-02-05T09:43:33.421Z] : [1770284613421]  "GET"  "/app/main.e4c6258ae5c8797a73c2.hot-update.json"
+[info] [2026-02-05T09:43:33.430Z] : [1770284613430]  "GET"  "/app/main.e4c6258ae5c8797a73c2.hot-update.js"
+[info] [2026-02-05T09:43:33.442Z] : [1770284613442]  "GET"  "/app/main.7c7953796b28beac1d5a.hot-update.json"
+[info] [2026-02-05T09:43:33.452Z] : [1770284613452]  "GET"  "/app/main.7c7953796b28beac1d5a.hot-update.js"
+[info] [2026-02-05T09:43:33.507Z] : [1770284613506]  "GET"  "/app/main.07f41ba0449adc0065bf.hot-update.json"
+[info] [2026-02-05T09:43:33.519Z] : [1770284613519]  "GET"  "/app/main.07f41ba0449adc0065bf.hot-update.js"
+[info] [2026-02-05T09:43:33.535Z] : [1770284613535]  "GET"  "/app/main.bb0261034f3e2e143a84.hot-update.json"
+[info] [2026-02-05T09:43:33.545Z] : [1770284613545]  "GET"  "/app/main.bb0261034f3e2e143a84.hot-update.js"
+[info] [2026-02-05T09:43:33.556Z] : [1770284613556]  "GET"  "/app/main.283daf7aec219e83e3d8.hot-update.json"
+[info] [2026-02-05T09:43:33.567Z] : [1770284613567]  "GET"  "/app/main.283daf7aec219e83e3d8.hot-update.js"
+[info] [2026-02-05T09:43:39.939Z] : [1770284619939]  "GET"  "/app/"
+[info] [2026-02-05T09:43:40.023Z] : [1770284620022]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:43:40.033Z] : [1770284620033]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:43:40.221Z] : [1770284620221]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:43:40.268Z] : [1770284620267]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T09:43:40.271Z] : [1770284620270]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:43:40.291Z] : [1770284620290]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T09:43:40.298Z] : [1770284620298]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T09:43:40.307Z] : [1770284620307]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T09:43:40.324Z] : [1770284620324]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T09:43:40.336Z] : [1770284620336]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T09:43:40.426Z] : [1770284620425]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:43:42.192Z] : [1770284622192]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:44:12.448Z] : [1770284652448]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T09:44:52.231Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:44:52.527Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:44:52.528Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 18:21:  'data' was used before it was defined          no-use-before-define
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 39:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 44:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 49:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 81:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 86:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:44:52.528Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:44:52.528Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:44:52.545Z] : [1770284692544]  "GET"  "/app/main.a66400bfac042c63c1d1.hot-update.json"
+[info] [2026-02-05T09:44:52.560Z] : [1770284692560]  "GET"  "/app/main.a66400bfac042c63c1d1.hot-update.js"
+[info] [2026-02-05T09:44:52.575Z] : [1770284692575]  "GET"  "/app/main.a66400bfac042c63c1d1.hot-update.js.map"
+[info] [2026-02-05T09:44:53.492Z] : [1770284693491]  "GET"  "/app/signIn"
+[info] [2026-02-05T09:44:53.525Z] : [1770284693525]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:44:53.530Z] : [1770284693530]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:44:53.653Z] : [1770284693653]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T09:44:53.673Z] : [1770284693673]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:44:53.678Z] : [1770284693678]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:45:01.792Z] : [1770284701792]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:45:18.364Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:45:18.544Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:45:18.544Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 20:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:45:18.544Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:45:18.544Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:45:18.560Z] : [1770284718560]  "GET"  "/app/main.e38ce4a8def50623145b.hot-update.json"
+[info] [2026-02-05T09:45:18.571Z] : [1770284718570]  "GET"  "/app/main.e38ce4a8def50623145b.hot-update.js"
+[info] [2026-02-05T09:45:18.586Z] : [1770284718585]  "GET"  "/app/main.e38ce4a8def50623145b.hot-update.js.map"
+[info] [2026-02-05T09:45:19.222Z] : [1770284719222]  "GET"  "/app/signIn"
+[info] [2026-02-05T09:45:19.246Z] : [1770284719246]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:45:19.259Z] : [1770284719259]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:45:19.403Z] : [1770284719403]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T09:45:19.405Z] : [1770284719405]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:45:19.433Z] : [1770284719432]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:45:19.455Z] : [1770284719455]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:45:20.652Z] : [1770284720652]  "GET"  "/app/signIn"
+[info] [2026-02-05T09:45:20.670Z] : [1770284720670]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:45:20.676Z] : [1770284720676]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:45:20.779Z] : [1770284720779]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T09:45:20.796Z] : [1770284720796]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:45:20.809Z] : [1770284720809]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:45:20.839Z] : [1770284720839]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:46:51.078Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:46:51.280Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:46:51.281Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:46:51.281Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:46:51.281Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:46:51.311Z] : [1770284811311]  "GET"  "/app/main.3031d67c92c7e92244a8.hot-update.json"
+[info] [2026-02-05T09:46:51.322Z] : [1770284811321]  "GET"  "/app/main.3031d67c92c7e92244a8.hot-update.js"
+[info] [2026-02-05T09:46:51.336Z] : [1770284811336]  "GET"  "/app/main.3031d67c92c7e92244a8.hot-update.js.map"
+[info] [2026-02-05T09:46:51.892Z] : [1770284811891]  "GET"  "/app/signIn"
+[info] [2026-02-05T09:46:51.947Z] : [1770284811947]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:46:51.951Z] : [1770284811950]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:46:52.070Z] : [1770284812070]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T09:46:52.071Z] : [1770284812071]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:46:52.096Z] : [1770284812096]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:46:52.202Z] : [1770284812202]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:46:55.295Z] : [1770284815295]  "GET"  "/app/signIn"
+[info] [2026-02-05T09:46:55.312Z] : [1770284815311]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:46:55.314Z] : [1770284815314]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:46:55.431Z] : [1770284815431]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T09:46:55.448Z] : [1770284815448]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:46:55.461Z] : [1770284815460]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:46:55.498Z] : [1770284815497]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:46:57.008Z] : [1770284817008]  "GET"  "/app/signIn"
+[info] [2026-02-05T09:46:57.036Z] : [1770284817036]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:46:57.048Z] : [1770284817048]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:46:57.166Z] : [1770284817166]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T09:46:57.167Z] : [1770284817167]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:46:57.203Z] : [1770284817203]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:46:57.240Z] : [1770284817240]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:47:32.025Z] : [1770284852024]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T09:47:32.033Z] : [1770284852033]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T09:47:32.035Z] : [1770284852035]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T09:47:32.036Z] : [1770284852036]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T09:47:32.039Z] : [1770284852039]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T09:47:32.041Z] : [1770284852041]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:47:32.054Z] : [1770284852054]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T09:48:10.309Z] : [1770284890309]  "GET"  "/app/"
+[info] [2026-02-05T09:48:10.352Z] : [1770284890352]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:48:10.362Z] : [1770284890361]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:48:10.522Z] : [1770284890522]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T09:48:10.534Z] : [1770284890533]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:48:10.601Z] : [1770284890601]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:48:10.603Z] : [1770284890603]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T09:48:10.619Z] : [1770284890619]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T09:48:10.622Z] : [1770284890622]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T09:48:10.624Z] : [1770284890624]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T09:48:10.631Z] : [1770284890631]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T09:48:10.636Z] : [1770284890636]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T09:48:10.696Z] : [1770284890696]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:48:41.905Z] : [1770284921905]  "POST"  "/server/auth/signup"
+[info] [2026-02-05T09:48:42.384Z] : [1770284922384]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:49:21.956Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:49:22.318Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:49:22.318Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:49:22.318Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:49:22.318Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:49:22.366Z] : [1770284962365]  "GET"  "/app/main.9ac94c4e765c8d51d7b4.hot-update.json"
+[info] [2026-02-05T09:49:22.431Z] : [1770284962431]  "GET"  "/app/main.9ac94c4e765c8d51d7b4.hot-update.js"
+[info] [2026-02-05T09:49:22.483Z] : [1770284962483]  "GET"  "/app/main.9ac94c4e765c8d51d7b4.hot-update.js.map"
+[info] [2026-02-05T09:49:25.100Z] : [1770284965099]  "GET"  "/app/signIn"
+[info] [2026-02-05T09:49:25.142Z] : [1770284965141]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:49:25.147Z] : [1770284965146]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:49:25.285Z] : [1770284965285]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:49:25.288Z] : [1770284965287]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T09:49:25.316Z] : [1770284965315]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:49:25.459Z] : [1770284965459]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:49:29.738Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:49:29.847Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:49:29.847Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:49:29.847Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:49:29.847Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:49:46.564Z] : [1770284986564]  "POST"  "/server/auth/signin"
+[info] [2026-02-05T09:49:46.938Z] : [1770284986937]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T09:49:46.940Z] : [1770284986940]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T09:49:46.951Z] : [1770284986951]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T09:49:46.953Z] : [1770284986953]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T09:49:46.956Z] : [1770284986956]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-05T09:49:46.961Z] : [1770284986961]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:49:46.964Z] : [1770284986964]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T09:49:46.968Z] : [1770284986968]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T09:49:46.972Z] : [1770284986972]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-05T09:49:46.977Z] : [1770284986977]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-05T09:49:46.981Z] : [1770284986981]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-05T09:49:46.996Z] : [1770284986995]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-05T09:49:46.999Z] : [1770284986999]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-05T09:49:47.004Z] : [1770284987003]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-05T09:57:24.778Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:57:25.124Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:57:25.124Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:57:25.124Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:57:25.124Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:57:25.142Z] : [1770285445142]  "GET"  "/app/main.a874a4d770918774982a.hot-update.json"
+[info] [2026-02-05T09:57:25.159Z] : [1770285445159]  "GET"  "/app/main.a874a4d770918774982a.hot-update.js"
+[info] [2026-02-05T09:57:36.663Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T09:57:37.062Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T09:57:37.062Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T09:57:37.062Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T09:57:37.062Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T09:57:37.086Z] : [1770285457086]  "GET"  "/app/main.bdc02bbb9aff0ccc3ffd.hot-update.json"
+[info] [2026-02-05T09:57:37.095Z] : [1770285457095]  "GET"  "/app/main.bdc02bbb9aff0ccc3ffd.hot-update.js"
+[info] [2026-02-05T09:59:06.943Z] : [1770285546943]  "GET"  "/app/home"
+[info] [2026-02-05T09:59:06.987Z] : [1770285546986]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:59:06.993Z] : [1770285546992]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:59:07.091Z] : [1770285547091]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:59:07.114Z] : [1770285547114]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-05T09:59:07.123Z] : [1770285547123]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T09:59:07.125Z] : [1770285547125]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:59:07.126Z] : [1770285547126]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T09:59:07.136Z] : [1770285547136]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T09:59:07.142Z] : [1770285547142]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T09:59:07.159Z] : [1770285547159]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T09:59:07.162Z] : [1770285547162]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T09:59:07.169Z] : [1770285547169]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-05T09:59:07.171Z] : [1770285547171]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-05T09:59:07.172Z] : [1770285547172]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-05T09:59:07.180Z] : [1770285547180]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-05T09:59:07.184Z] : [1770285547184]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-05T09:59:07.187Z] : [1770285547187]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-05T09:59:07.265Z] : [1770285547264]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:59:11.532Z] : [1770285551531]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:59:15.841Z] : [1770285555840]  "GET"  "/app/profile"
+[info] [2026-02-05T09:59:15.857Z] : [1770285555857]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T09:59:15.861Z] : [1770285555860]  "GET"  "/src/index.js"
+[info] [2026-02-05T09:59:15.892Z] : [1770285555891]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T09:59:15.895Z] : [1770285555895]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T09:59:16.023Z] : [1770285556023]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T09:59:36.477Z] : [1770285576477]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T10:01:00.677Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:01:00.972Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:01:00.973Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:01:00.973Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:01:00.973Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:01:00.990Z] : [1770285660990]  "GET"  "/app/main.27307ca69eebb148ca51.hot-update.json"
+[info] [2026-02-05T10:01:01.012Z] : [1770285661012]  "GET"  "/app/main.27307ca69eebb148ca51.hot-update.js"
+[info] [2026-02-05T10:01:01.023Z] : [1770285661022]  "GET"  "/app/main.27307ca69eebb148ca51.hot-update.js.map"
+[info] [2026-02-05T10:01:12.058Z] : [1770285672058]  "GET"  "/app/profile"
+[info] [2026-02-05T10:01:12.084Z] : [1770285672084]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:01:12.091Z] : [1770285672091]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:01:12.201Z] : [1770285672200]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:01:12.202Z] : [1770285672202]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T10:01:12.246Z] : [1770285672246]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:01:12.367Z] : [1770285672367]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:02:22.632Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:02:22.882Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:02:22.882Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:02:22.882Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:02:22.882Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:02:22.895Z] : [1770285742895]  "GET"  "/app/main.2862b549b127491099c6.hot-update.json"
+[info] [2026-02-05T10:02:22.903Z] : [1770285742903]  "GET"  "/app/main.2862b549b127491099c6.hot-update.js"
+[info] [2026-02-05T10:02:22.922Z] : [1770285742922]  "GET"  "/app/main.2862b549b127491099c6.hot-update.js.map"
+[info] [2026-02-05T10:03:14.056Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:03:14.242Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:03:14.242Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:03:14.243Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:03:14.243Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:03:14.252Z] : [1770285794252]  "GET"  "/app/main.da7558ea7df7cb44c409.hot-update.json"
+[info] [2026-02-05T10:03:14.260Z] : [1770285794259]  "GET"  "/app/main.da7558ea7df7cb44c409.hot-update.js"
+[info] [2026-02-05T10:03:14.277Z] : [1770285794277]  "GET"  "/app/main.da7558ea7df7cb44c409.hot-update.js.map"
+[info] [2026-02-05T10:03:46.181Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:03:46.414Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:03:46.414Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:03:46.414Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:03:46.414Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:03:46.426Z] : [1770285826425]  "GET"  "/app/main.73543ed1e22c08c9fb4f.hot-update.json"
+[info] [2026-02-05T10:03:46.433Z] : [1770285826433]  "GET"  "/app/main.73543ed1e22c08c9fb4f.hot-update.js"
+[info] [2026-02-05T10:03:46.445Z] : [1770285826445]  "GET"  "/app/main.73543ed1e22c08c9fb4f.hot-update.js.map"
+[info] [2026-02-05T10:03:49.664Z] : [1770285829664]  "GET"  "/app/profile"
+[info] [2026-02-05T10:03:49.685Z] : [1770285829685]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:03:49.695Z] : [1770285829695]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:03:49.788Z] : [1770285829788]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:03:49.814Z] : [1770285829813]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:03:49.961Z] : [1770285829961]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:03:51.368Z] : [1770285831368]  "GET"  "/app/profile"
+[info] [2026-02-05T10:03:51.388Z] : [1770285831387]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:03:51.390Z] : [1770285831390]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:03:51.441Z] : [1770285831441]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:03:51.450Z] : [1770285831450]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:03:51.529Z] : [1770285831529]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:03:55.907Z] : [1770285835906]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T10:04:49.661Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:04:49.827Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:04:49.828Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:04:49.828Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:04:49.828Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:04:49.859Z] : [1770285889859]  "GET"  "/app/main.f57aca6ff3448007cb17.hot-update.json"
+[info] [2026-02-05T10:04:49.873Z] : [1770285889873]  "GET"  "/app/main.f57aca6ff3448007cb17.hot-update.js"
+[info] [2026-02-05T10:04:49.888Z] : [1770285889888]  "GET"  "/app/main.f57aca6ff3448007cb17.hot-update.js.map"
+[info] [2026-02-05T10:04:50.886Z] : [1770285890886]  "GET"  "/app/profile"
+[info] [2026-02-05T10:04:50.908Z] : [1770285890908]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:04:50.915Z] : [1770285890915]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:04:51.025Z] : [1770285891025]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:04:51.027Z] : [1770285891027]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T10:04:51.069Z] : [1770285891069]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:04:51.238Z] : [1770285891238]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:04:52.129Z] : [1770285892129]  "GET"  "/app/profile"
+[info] [2026-02-05T10:04:52.145Z] : [1770285892145]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:04:52.148Z] : [1770285892148]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:04:52.236Z] : [1770285892236]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T10:04:52.237Z] : [1770285892237]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:04:52.263Z] : [1770285892263]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:04:52.327Z] : [1770285892327]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:04:59.561Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:04:59.676Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:04:59.676Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:04:59.676Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:04:59.676Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:04:59.691Z] : [1770285899691]  "GET"  "/app/main.f2357408e13e1858cacf.hot-update.json"
+[info] [2026-02-05T10:04:59.703Z] : [1770285899702]  "GET"  "/app/main.f2357408e13e1858cacf.hot-update.js"
+[info] [2026-02-05T10:04:59.719Z] : [1770285899719]  "GET"  "/app/main.f2357408e13e1858cacf.hot-update.js.map"
+[info] [2026-02-05T10:05:00.436Z] : [1770285900436]  "GET"  "/app/profile"
+[info] [2026-02-05T10:05:00.456Z] : [1770285900456]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:05:00.465Z] : [1770285900464]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:05:00.569Z] : [1770285900569]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T10:05:00.570Z] : [1770285900570]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:05:00.613Z] : [1770285900613]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:05:00.661Z] : [1770285900661]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:05:57.222Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:05:57.330Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:05:57.330Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:05:57.330Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:05:57.330Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:05:57.342Z] : [1770285957342]  "GET"  "/app/main.75be3173c41308224073.hot-update.json"
+[info] [2026-02-05T10:05:57.351Z] : [1770285957351]  "GET"  "/app/main.75be3173c41308224073.hot-update.js"
+[info] [2026-02-05T10:05:57.362Z] : [1770285957362]  "GET"  "/app/main.75be3173c41308224073.hot-update.js.map"
+[info] [2026-02-05T10:05:59.753Z] : [1770285959753]  "GET"  "/app/profile"
+[info] [2026-02-05T10:05:59.783Z] : [1770285959782]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:05:59.789Z] : [1770285959789]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:05:59.911Z] : [1770285959911]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:05:59.914Z] : [1770285959914]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T10:05:59.973Z] : [1770285959973]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:06:00.052Z] : [1770285960052]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:06:26.184Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:06:26.330Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:06:26.330Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:06:26.330Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:06:26.330Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:06:26.356Z] : [1770285986356]  "GET"  "/app/main.094520684b3cd1b6b32c.hot-update.json"
+[info] [2026-02-05T10:06:26.368Z] : [1770285986368]  "GET"  "/app/main.094520684b3cd1b6b32c.hot-update.js"
+[info] [2026-02-05T10:06:26.385Z] : [1770285986385]  "GET"  "/app/main.094520684b3cd1b6b32c.hot-update.js.map"
+[info] [2026-02-05T10:06:33.529Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:06:33.671Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:06:33.671Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:06:33.671Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:06:33.671Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:06:33.683Z] : [1770285993683]  "GET"  "/app/main.9b9dd4108e389a859eec.hot-update.json"
+[info] [2026-02-05T10:06:33.690Z] : [1770285993690]  "GET"  "/app/main.9b9dd4108e389a859eec.hot-update.js"
+[info] [2026-02-05T10:06:33.702Z] : [1770285993702]  "GET"  "/app/main.9b9dd4108e389a859eec.hot-update.js.map"
+[info] [2026-02-05T10:06:55.372Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:06:55.477Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:06:55.477Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:06:55.477Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:06:55.477Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:06:55.490Z] : [1770286015489]  "GET"  "/app/main.6e03c11e6c0bdf39dfe7.hot-update.json"
+[info] [2026-02-05T10:06:55.498Z] : [1770286015498]  "GET"  "/app/main.6e03c11e6c0bdf39dfe7.hot-update.js"
+[info] [2026-02-05T10:06:55.508Z] : [1770286015508]  "GET"  "/app/main.6e03c11e6c0bdf39dfe7.hot-update.js.map"
+[info] [2026-02-05T10:07:06.045Z] : [1770286026045]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:07:16.735Z] : [1770286036735]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-05T10:07:16.736Z] : [1770286036736]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-05T10:07:16.737Z] : [1770286036737]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:07:20.715Z] : [1770286040715]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:07:26.983Z] : [1770286046983]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-05T10:07:26.984Z] : [1770286046984]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-05T10:07:26.985Z] : [1770286046985]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:07:53.310Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:07:53.645Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:07:53.645Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:07:53.645Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:07:53.645Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:07:53.663Z] : [1770286073663]  "GET"  "/app/main.9f5da7bc8d22dd29b976.hot-update.json"
+[info] [2026-02-05T10:07:53.671Z] : [1770286073670]  "GET"  "/app/main.9f5da7bc8d22dd29b976.hot-update.js"
+[info] [2026-02-05T10:07:55.290Z] : [1770286075290]  "GET"  "/app/social"
+[info] [2026-02-05T10:07:55.309Z] : [1770286075309]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:07:55.320Z] : [1770286075319]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:07:55.416Z] : [1770286075416]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:07:55.438Z] : [1770286075437]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:07:55.447Z] : [1770286075446]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-05T10:07:55.448Z] : [1770286075448]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-05T10:07:55.545Z] : [1770286075545]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:08:46.971Z] : [1770286126971]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:08:46.973Z] : [1770286126972]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:08:46.980Z] : [1770286126980]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:08:46.985Z] : [1770286126985]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-05T10:08:46.991Z] : [1770286126991]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:08:46.998Z] : [1770286126998]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:08:47.007Z] : [1770286127007]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:08:47.009Z] : [1770286127009]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:08:47.017Z] : [1770286127017]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-05T10:08:47.019Z] : [1770286127019]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-05T10:08:47.022Z] : [1770286127021]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-05T10:08:47.025Z] : [1770286127025]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-05T10:08:47.041Z] : [1770286127040]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-05T10:08:47.046Z] : [1770286127046]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-05T10:09:12.055Z] : [1770286152055]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:09:18.036Z] : [1770286158035]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:09:20.481Z] : [1770286160480]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:09:27.696Z] : [1770286167696]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:09:38.435Z] : [1770286178435]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:10:46.113Z] : [1770286246113]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:11:06.005Z] : [1770286266005]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:11:09.918Z] : [1770286269918]  "GET"  "/app/"
+[info] [2026-02-05T10:11:09.950Z] : [1770286269950]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:11:09.953Z] : [1770286269953]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:11:10.011Z] : [1770286270011]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:11:10.027Z] : [1770286270026]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:11:10.028Z] : [1770286270028]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:11:10.030Z] : [1770286270030]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:11:10.031Z] : [1770286270031]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:11:10.039Z] : [1770286270038]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:11:10.041Z] : [1770286270041]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:11:10.049Z] : [1770286270049]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:11:10.547Z] : [1770286270546]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:11:14.125Z] : [1770286274125]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T10:12:20.545Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:12:20.688Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:12:20.688Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:12:20.688Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:12:20.689Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:12:20.708Z] : [1770286340708]  "GET"  "/app/main.ce272074fe907c2225c7.hot-update.json"
+[info] [2026-02-05T10:12:20.717Z] : [1770286340717]  "GET"  "/app/main.ce272074fe907c2225c7.hot-update.js"
+[info] [2026-02-05T10:12:23.655Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:12:23.723Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:12:23.723Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:12:23.723Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:12:23.723Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:12:25.713Z] : [1770286345713]  "GET"  "/app/"
+[info] [2026-02-05T10:12:25.737Z] : [1770286345736]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:12:25.745Z] : [1770286345745]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:12:25.841Z] : [1770286345841]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:12:25.867Z] : [1770286345867]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:12:25.869Z] : [1770286345869]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:12:25.870Z] : [1770286345870]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:12:25.871Z] : [1770286345871]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:12:25.880Z] : [1770286345880]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:12:25.883Z] : [1770286345883]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:12:25.890Z] : [1770286345890]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:12:25.920Z] : [1770286345920]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:12:26.576Z] : [1770286346575]  "GET"  "/app/"
+[info] [2026-02-05T10:12:26.597Z] : [1770286346597]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:12:26.599Z] : [1770286346599]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:12:26.629Z] : [1770286346629]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:12:26.632Z] : [1770286346632]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:12:26.635Z] : [1770286346635]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:12:26.636Z] : [1770286346636]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:12:26.645Z] : [1770286346645]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:12:26.648Z] : [1770286346647]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:12:26.649Z] : [1770286346649]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:12:26.650Z] : [1770286346650]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:12:26.756Z] : [1770286346756]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:12:26.933Z] : [1770286346933]  "GET"  "/app/"
+[info] [2026-02-05T10:12:26.951Z] : [1770286346951]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:12:26.953Z] : [1770286346953]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:12:26.978Z] : [1770286346978]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:12:26.980Z] : [1770286346980]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:12:26.982Z] : [1770286346982]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:12:26.983Z] : [1770286346983]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:12:26.990Z] : [1770286346990]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:12:26.992Z] : [1770286346992]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:12:26.995Z] : [1770286346995]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:12:26.997Z] : [1770286346997]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:12:27.106Z] : [1770286347105]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:12:27.185Z] : [1770286347185]  "GET"  "/app/"
+[info] [2026-02-05T10:12:27.203Z] : [1770286347203]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:12:27.211Z] : [1770286347211]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:12:27.228Z] : [1770286347227]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:12:27.233Z] : [1770286347233]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:12:27.236Z] : [1770286347236]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:12:27.236Z] : [1770286347236]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:12:27.237Z] : [1770286347237]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:12:27.244Z] : [1770286347244]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:12:27.247Z] : [1770286347247]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:12:27.253Z] : [1770286347253]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:12:27.367Z] : [1770286347367]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:12:27.384Z] : [1770286347384]  "GET"  "/app/"
+[info] [2026-02-05T10:12:27.400Z] : [1770286347400]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:12:27.404Z] : [1770286347404]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:12:27.426Z] : [1770286347426]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:12:27.431Z] : [1770286347431]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:12:27.433Z] : [1770286347433]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:12:27.434Z] : [1770286347434]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:12:27.435Z] : [1770286347435]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:12:27.441Z] : [1770286347440]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:12:27.443Z] : [1770286347443]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:12:27.449Z] : [1770286347449]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:12:27.543Z] : [1770286347543]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:12:27.571Z] : [1770286347570]  "GET"  "/app/"
+[info] [2026-02-05T10:12:27.592Z] : [1770286347592]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:12:27.597Z] : [1770286347597]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:12:27.616Z] : [1770286347616]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:12:27.620Z] : [1770286347620]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:12:27.624Z] : [1770286347624]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:12:27.626Z] : [1770286347626]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:12:27.627Z] : [1770286347627]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:12:27.635Z] : [1770286347635]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:12:27.639Z] : [1770286347639]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:12:27.642Z] : [1770286347642]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:12:27.768Z] : [1770286347768]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:12:33.448Z] : [1770286353448]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-05T10:13:20.845Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:13:20.953Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:13:20.953Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:13:20.953Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:13:20.953Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:13:20.965Z] : [1770286400965]  "GET"  "/app/main.4d379608e5c56871d121.hot-update.json"
+[info] [2026-02-05T10:13:20.974Z] : [1770286400974]  "GET"  "/app/main.4d379608e5c56871d121.hot-update.js"
+[info] [2026-02-05T10:13:20.985Z] : [1770286400985]  "GET"  "/app/main.4d379608e5c56871d121.hot-update.js.map"
+[info] [2026-02-05T10:14:12.656Z] : [1770286452656]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:14:12.657Z] : [1770286452657]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:14:26.604Z] : [1770286466603]  "POST"  "/server/auth/signin"
+[info] [2026-02-05T10:14:30.966Z] : [1770286470966]  "POST"  "/server/auth/signin"
+[info] [2026-02-05T10:14:31.103Z] : [1770286471103]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:14:31.107Z] : [1770286471107]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:14:31.115Z] : [1770286471115]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:14:31.116Z] : [1770286471116]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-05T10:14:31.119Z] : [1770286471119]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:14:31.122Z] : [1770286471122]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:14:31.129Z] : [1770286471129]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:14:31.131Z] : [1770286471131]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:14:31.135Z] : [1770286471135]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-05T10:14:31.136Z] : [1770286471136]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-05T10:14:31.137Z] : [1770286471137]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-05T10:14:31.140Z] : [1770286471140]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-05T10:14:31.146Z] : [1770286471146]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-05T10:14:31.147Z] : [1770286471147]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-05T10:14:59.513Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T10:14:59.670Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T10:14:59.671Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T10:14:59.671Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T10:14:59.671Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T10:14:59.700Z] : [1770286499700]  "GET"  "/app/main.f2187353053f5b14b0a2.hot-update.json"
+[info] [2026-02-05T10:14:59.709Z] : [1770286499708]  "GET"  "/app/main.f2187353053f5b14b0a2.hot-update.js"
+[info] [2026-02-05T10:15:21.106Z] : [1770286521106]  "GET"  "/app/"
+[info] [2026-02-05T10:15:21.121Z] : [1770286521121]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:15:21.145Z] : [1770286521145]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:15:21.268Z] : [1770286521268]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:15:21.278Z] : [1770286521277]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:15:21.279Z] : [1770286521279]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:15:21.286Z] : [1770286521286]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:15:21.288Z] : [1770286521288]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:15:21.291Z] : [1770286521291]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:15:21.293Z] : [1770286521293]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:15:21.297Z] : [1770286521297]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:15:21.453Z] : [1770286521453]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:15:32.881Z] : [1770286532881]  "GET"  "/app/home"
+[info] [2026-02-05T10:15:32.898Z] : [1770286532898]  "GET"  "/src/index.js"
+[info] [2026-02-05T10:15:32.917Z] : [1770286532916]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T10:15:33.013Z] : [1770286533012]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T10:15:33.014Z] : [1770286533014]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-05T10:15:33.022Z] : [1770286533022]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:15:33.024Z] : [1770286533024]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T10:15:33.029Z] : [1770286533029]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T10:15:33.033Z] : [1770286533033]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T10:15:33.038Z] : [1770286533037]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T10:15:33.048Z] : [1770286533048]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T10:15:33.049Z] : [1770286533049]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T10:15:33.054Z] : [1770286533054]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-05T10:15:33.056Z] : [1770286533056]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-05T10:15:33.061Z] : [1770286533061]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-05T10:15:33.065Z] : [1770286533065]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-05T10:15:33.066Z] : [1770286533066]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-05T10:15:33.072Z] : [1770286533072]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-05T10:15:33.587Z] : [1770286533587]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T10:15:52.092Z] : [1770286552091]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T10:15:52.095Z] : [1770286552095]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T11:16:44.116Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T11:16:44.719Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T11:16:44.720Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+
+src/components/Login-SignIn/SignIn.jsx
+  Line 16:12:  'user' is assigned a value but never used      no-unused-vars
+  Line 21:17:  'response' is assigned a value but never used  no-unused-vars
+  Line 40:28:  Expected '===' and instead saw '=='            eqeqeq
+  Line 45:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 50:27:  Expected '===' and instead saw '=='            eqeqeq
+  Line 82:25:  Expected '===' and instead saw '=='            eqeqeq
+  Line 87:33:  Expected '===' and instead saw '=='            eqeqeq
+[info] [2026-02-05T11:16:44.720Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T11:16:44.720Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T11:16:44.745Z] : [1770290204745]  "GET"  "/app/main.dfb16dd8e51b948ad260.hot-update.json"
+[debug] [2026-02-05T11:16:44.746Z] : > refreshing access token <
+[debug] [2026-02-05T11:16:44.750Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2026-02-05T11:16:44.938Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 11:16:19 GMT","content-type":"application/json;charset=UTF-8","content-length":"2442","connection":"keep-alive","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2026-02-05T11:16:44.960Z] : [1770290204960]  "GET"  "/app/main.dfb16dd8e51b948ad260.hot-update.js"
+[info] [2026-02-05T11:16:44.977Z] : [1770290204977]  "GET"  "/app/profile"
+[info] [2026-02-05T11:16:45.007Z] : [1770290205007]  "GET"  "/src/index.js"
+[info] [2026-02-05T11:16:45.016Z] : [1770290205016]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T11:16:45.210Z] : [1770290205210]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T11:16:45.215Z] : [1770290205215]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T11:16:45.246Z] : [1770290205246]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T11:18:06.716Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T11:18:07.265Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T11:18:07.266Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[info] [2026-02-05T11:18:48.641Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T11:18:49.061Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T11:18:49.062Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/

@@ -4,6 +4,9 @@
 	"main": "index.js",
 	"author": "harivignesh.r@zohocorp.com",
 	"dependencies": {
-		"zcatalyst-sdk-node": "latest"
+		"bcrypt": "^6.0.0",
+		"bcryptjs": "^3.0.3",
+		"express": "^5.2.1",
+		"zcatalyst-sdk-node": "^3.1.1"
 	}
 }

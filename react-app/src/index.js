@@ -9,6 +9,7 @@ import SocialHub from "./components/Social/SocialHub.jsx";
 import Discover from "./components/Discover/Discover";
 import Profile from "./components/Profile/Profile.jsx"
 import { UserProvider } from "./components/Login-SignIn/UserContext.jsx";
+import SinglePersonMovie from "./components/Single/SinglePersonMovie.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -23,6 +24,7 @@ root.render(
         <Route path="/app/social" element={<SocialHub />} />
         <Route path="/app/discover" element={<Discover />} />
         <Route path="/app/profile" element={<Profile />} />
+        <Route path="/app/single" element={<SinglePersonMovie />} />
       </Routes>
     </BrowserRouter>
     </UserProvider>

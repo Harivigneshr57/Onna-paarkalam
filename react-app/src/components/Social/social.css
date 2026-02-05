@@ -15,13 +15,13 @@ body{
 
 #pendingInviteDiv{
     height: 20rem;
-    padding: 2rem;
+    padding:10rem;
 }
 #pendingTop{
     padding: 2rem;
 }
 #allFriendsBox {
-    padding: 2rem;
+    padding: 10rem;
 }
 #headOfAllFr {
     padding: 2rem;
@@ -45,13 +45,14 @@ body{
     background: rgb(3, 11, 38);
 }
 #socialMain {
-    width: 145rem;
 }
-#socialTopBar{
+#socialTopBar {
     display: flex;
-    color: black;
     height: 8rem;
     justify-content: space-between;
     padding: 2rem;
-    background: rgb(3, 11, 38);
+    position: fixed;
+    width: 120rem;
+    padding: 2rem 7rem;
+    background: linear-gradient(180deg, black 60%, transparent);
 }

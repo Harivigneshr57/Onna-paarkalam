@@ -1,4 +1,5 @@
 import StatsBar from "./StatsBar.jsx";
+import Button from "../Login-SignIn/Button.jsx";
 
 export default function ProfileHeader() {
   return (
@@ -21,7 +22,7 @@ export default function ProfileHeader() {
         </div>
       </div>
       <div>
-           <button className="edit-btn">Edit Hub</button>
+           <Button>Edit Hub</Button>
       </div>
     </section>
   );
