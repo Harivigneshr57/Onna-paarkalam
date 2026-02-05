@@ -1657,3 +1657,129 @@ change of index.js in auth detected. Preparing your function, please wait...
 change of index.js in auth detected. Preparing your function, please wait...
 [info] [2026-02-05T11:18:49.061Z] : ℹ AdvancedIO[auth]: ready!
 [info] [2026-02-05T11:18:49.062Z] : ℹ AdvancedIO[auth]: http://localhost:3002/server/auth/
+[debug] [2026-02-05T12:05:50.159Z] : 
+[debug] [2026-02-05T12:05:50.160Z] : ----------------------------------------------------------------------
+[debug] [2026-02-05T12:05:50.160Z] : Command:      /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/node /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/catalyst serve
+[debug] [2026-02-05T12:05:50.161Z] : CLI Version:  1.23.0
+[debug] [2026-02-05T12:05:50.161Z] : Platform:     linux
+[debug] [2026-02-05T12:05:50.162Z] : Node Version: v20.19.6
+[debug] [2026-02-05T12:05:50.162Z] : Time:         Thu Feb 05 2026 17:35:50 GMT+0530 (India Standard Time)
+[debug] [2026-02-05T12:05:50.162Z] : ----------------------------------------------------------------------
+[debug] [2026-02-05T12:05:50.162Z] : 
+[debug] [2026-02-05T12:05:50.758Z] : > authorizing via signed-in user option
+[debug] [2026-02-05T12:05:50.758Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2026-02-05T12:05:50.775Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113 
+
+[debug] [2026-02-05T12:05:51.025Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 12:05:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-05T12:05:51.029Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113/environment 
+
+[debug] [2026-02-05T12:05:51.080Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 12:05:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-05T12:05:51.142Z] : Build folder already exists, starting cleanup
+[debug] [2026-02-05T12:05:51.184Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/get-details 
+Query params: {"feature_name":"runtime"}
+
+[debug] [2026-02-05T12:05:51.225Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 12:05:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-05T12:05:51.228Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2026-02-05T12:05:51.276Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 12:05:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-05T12:05:51.278Z] : unknown eol undefined hence skipping check
+[debug] [2026-02-05T12:05:51.279Z] : unknown eol undefined hence skipping check
+[debug] [2026-02-05T12:05:51.773Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
+[info] [2026-02-05T12:05:53.750Z] : [react-plugin]: Starting the development server...
+
+[info] [2026-02-05T12:05:53.752Z] : 
+[info] [2026-02-05T12:05:53.753Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2026-02-05T12:05:53.753Z] : 
+[info] [2026-02-05T12:05:54.514Z] : Skipping API Gateway rules
+[info] [2026-02-05T12:05:54.518Z] : 
+[info] [2026-02-05T12:05:54.518Z] :  >>>>>>>>>>>>> Advanced I/O <<<<<<<<<<< 
+[info] [2026-02-05T12:05:54.519Z] : ℹ auth   : http://localhost:3000/server/auth/
+[info] [2026-02-05T12:05:54.519Z] : ℹ friends: http://localhost:3000/server/friends/
+[info] [2026-02-05T12:05:54.519Z] : 
+[info] [2026-02-05T12:05:54.519Z] : 
+[info] [2026-02-05T12:05:54.519Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2026-02-05T12:05:54.519Z] : ℹ client[react-app]: http://localhost:3000/app/
+[info] [2026-02-05T12:05:54.519Z] : 
+[info] [2026-02-05T12:05:54.838Z] : [1770293154838]  "GET"  "/app/"
+[info] [2026-02-05T12:05:55.271Z] : [react-plugin]: Compiled successfully!
+[info] [2026-02-05T12:05:55.271Z] : [react-plugin]: 
+[info] [2026-02-05T12:05:55.272Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2026-02-05T12:05:55.272Z] : [react-plugin]: 
+[info] [2026-02-05T12:05:55.272Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2026-02-05T12:05:55.272Z] : [react-plugin]:   On Your Network:  http://10.89.34.46:3000/app/
+[info] [2026-02-05T12:05:55.272Z] : [react-plugin]: 
+[info] [2026-02-05T12:05:55.272Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2026-02-05T12:05:55.272Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2026-02-05T12:05:55.272Z] : [react-plugin]: 
+[info] [2026-02-05T12:05:55.365Z] : [1770293155365]  "GET"  "/src/index.js"
+[info] [2026-02-05T12:05:55.389Z] : [1770293155389]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-05T12:05:55.572Z] : [1770293155572]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-05T12:05:55.615Z] : [1770293155615]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-05T12:05:55.617Z] : [1770293155617]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T12:05:55.618Z] : [1770293155618]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T12:05:55.625Z] : [1770293155624]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T12:05:55.633Z] : [1770293155632]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T12:05:55.667Z] : [1770293155667]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T12:05:55.698Z] : [1770293155697]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T12:05:57.634Z] : [1770293157634]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T12:06:17.856Z] : [1770293177855]  "POST"  "/server/auth/signup"
+[info] [2026-02-05T12:06:18.284Z] : [1770293178284]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T12:06:27.076Z] : [1770293187076]  "POST"  "/server/auth/signin"
+[info] [2026-02-05T12:06:27.260Z] : [1770293187260]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-05T12:06:27.269Z] : [1770293187268]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-05T12:06:27.270Z] : [1770293187270]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-05T12:06:27.271Z] : [1770293187271]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-05T12:06:27.272Z] : [1770293187272]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-05T12:06:27.273Z] : [1770293187273]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-05T12:06:27.275Z] : [1770293187275]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-05T12:06:27.296Z] : [1770293187296]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-05T12:06:27.308Z] : [1770293187307]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-05T12:06:27.312Z] : [1770293187312]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-05T12:06:27.319Z] : [1770293187319]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-05T12:06:27.339Z] : [1770293187339]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-05T12:06:27.421Z] : [1770293187421]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-05T12:06:27.424Z] : [1770293187423]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-05T12:35:19.384Z] : 
+change of index.js in auth detected. Preparing your function, please wait...
+[info] [2026-02-05T12:35:19.802Z] : ℹ AdvancedIO[auth]: ready!
+[info] [2026-02-05T12:35:19.802Z] : ℹ AdvancedIO[auth]: http://localhost:3000/server/auth/
+[info] [2026-02-05T12:38:28.289Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T12:38:29.661Z] : [react-plugin]: Failed to compile.
+
+[info] [2026-02-05T12:38:29.662Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 98:117:  Unexpected use of 'name'  no-restricted-globals
+
+Search for the keywords to learn more about each error.
+[info] [2026-02-05T12:39:39.394Z] : [react-plugin]: Compiling...
+[info] [2026-02-05T12:39:39.620Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-05T12:39:39.620Z] : [react-plugin]: [eslint] 
+src/components/Login-SignIn/Login.jsx
+  Line 22:12:  'user' is assigned a value but never used        no-unused-vars
+  Line 22:17:  'changeUser' is assigned a value but never used  no-unused-vars
+  Line 26:15:  'response' is assigned a value but never used    no-unused-vars
+[info] [2026-02-05T12:39:39.620Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-05T12:39:39.621Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-05T12:39:39.650Z] : [1770295179650]  "GET"  "/app/main.99b4fed6ae3f1559c0d1.hot-update.json"
+[debug] [2026-02-05T12:39:39.650Z] : > refreshing access token <
+[debug] [2026-02-05T12:39:39.652Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2026-02-05T12:39:39.819Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Feb 2026 12:39:14 GMT","content-type":"application/json;charset=UTF-8","content-length":"2442","connection":"keep-alive","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2026-02-05T12:39:39.836Z] : [1770295179835]  "GET"  "/app/main.99b4fed6ae3f1559c0d1.hot-update.js"
+[info] [2026-02-05T12:39:39.843Z] : [1770295179843]  "GET"  "/app/main.6f736def58d157965a1b.hot-update.json"
+[info] [2026-02-05T12:39:39.848Z] : [1770295179848]  "GET"  "/app/main.6f736def58d157965a1b.hot-update.js"
