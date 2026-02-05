@@ -12,7 +12,7 @@ module.exports = async (req, res) => {
   req.on("end", async () => {
     try {
       const data = JSON.parse(body || "{}");
-      const { email, password, username } = data;
+      const { password, username } = data;
 
       const app = catalyst.initialize(req);
       const zcql = app.zcql();
@@ -21,13 +21,13 @@ module.exports = async (req, res) => {
       /* ================= SIGNUP ================= */
       if (req.url === "/signup") {
 
-        if (!email || !password || !name) {
+        if (!password || !username) {
           res.writeHead(400, { "Content-Type": "application/json" });
           return res.end(JSON.stringify({ message: "All fields required" }));
         }
 
         const check = await zcql.executeZCQLQuery(
-          `SELECT ROWID FROM users WHERE email='${email}'`
+          `SELECT ROWID FROM users WHERE username='${username}'`
         );
 
         if (check.length > 0) {
@@ -38,7 +38,6 @@ module.exports = async (req, res) => {
         const hashed = await bcrypt.hash(password, 10);
 
         await usersTable.insertRow({
-          email,
           password: hashed,
           username
         });
@@ -50,13 +49,13 @@ module.exports = async (req, res) => {
       /* ================= SIGNIN ================= */
       if (req.url === "/signin") {
 
-        if (!email || !password) {
+        if (!username || !password) {
           res.writeHead(400, { "Content-Type": "application/json" });
-          return res.end(JSON.stringify({ message: "Email & password required" }));
+          return res.end(JSON.stringify({ message: "username & password required" }));
         }
 
         const result = await zcql.executeZCQLQuery(
-          `SELECT ROWID ,email, password, username FROM users WHERE email='${email}'`
+          `SELECT ROWID , password, username FROM users WHERE username='${username}'`
         );
 
         if (result.length === 0) {
@@ -75,8 +74,7 @@ module.exports = async (req, res) => {
         res.writeHead(200, { "Content-Type": "application/json" });
         return res.end(JSON.stringify({
           message: "Login successful",
-          name: user.name,
-          email: user.email,
+          name: user.username,
 		  id: user.ROWID
         }));
       }
