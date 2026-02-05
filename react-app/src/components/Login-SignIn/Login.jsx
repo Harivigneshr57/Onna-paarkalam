@@ -13,7 +13,6 @@ export default function Login(){
     }
 
     const [username, setName] = useState("");
-    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [showMsg, setShowMsg] = useState(false);
     const [style, setStyle] = useState(false);
@@ -26,7 +25,7 @@ export default function Login(){
         const response = await fetch("/server/auth/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ username, email, password })
+          body: JSON.stringify({ username, password })
         })
         .then(res => res.json())
         .then(dat => data = dat);
@@ -35,7 +34,7 @@ export default function Login(){
       
         if (data.message === "User already exists") {
             setStyle(false);
-            errorMsg("User Already Exist!!", "Go to SignIn");
+            errorMsg("User Already Exist", "UserName Already Taken");
         } else if (data.message === "Signup successful") {
             setStyle(true);
             errorMsg("Signup Successful!!", "U can SignIn");
@@ -57,18 +56,6 @@ export default function Login(){
         if(username.length < 5){
             setStyle(false);
             errorMsg("Invalid Name!!","Name should contains 5 char atLeast")
-            return;
-        }
-      
-        if (email.length < 13) {
-            setStyle(false);
-            errorMsg("Invalid Email!!", "Email should contain 13 letters minimum");
-            return;
-        }
-      
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            setStyle(false);
-            errorMsg("Invalid Email!!", "Enter a valid Email address");
             return;
         }
       
@@ -95,8 +82,7 @@ export default function Login(){
                 <div className="login flex">
                     <h1>Watch Movies Together,<span style={{color:"#517692"}}><br/>Perfectly Synced</span></h1>
                     <h6>Host private rooms, share laughs in real-time, and experience premium cinema with friends anywhere.</h6>
-                    <input type="text" placeholder="Enter Your Name" id="loginName" style={{width:"30rem"}}  value={username} onChange={(e) => setName(e.target.value)}/>
-                    <input type="email" placeholder="Enter Your Email" id="loginEmail" style={{width:"30rem"}} value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="text" placeholder="Enter Your UserName" id="loginName" style={{width:"30rem"}}  value={username} onChange={(e) => setName(e.target.value)}/>
                     <div className="loginPass flex">
                         <input type="password" placeholder="Enter Your Password" id="loginPassword" style={{width:"25rem"}} value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
                         <Button className="bigbutton" onClick={loginCheck} id="signUp">Login</Button>

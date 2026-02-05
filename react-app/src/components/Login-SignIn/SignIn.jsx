@@ -7,7 +7,7 @@ import Msg from "./ErrorMsg";
 import { UserContext } from "./UserContext";
 
 export default function SignIn() {
-    const [email,setEmail] = useState('');
+    const [username,setName] = useState('');
     const [password,setPassword] = useState('');
     const [showMsg, setShowMsg] = useState(false);
     const [style, setStyle] = useState(false);
@@ -26,7 +26,7 @@ export default function SignIn() {
                 "Content-Type": "application/json"
               },
               body: JSON.stringify({
-                email,
+                username,
                 password
               })
             }
@@ -49,7 +49,7 @@ export default function SignIn() {
           }
           if(data.message == "Login successful"){
             setStyle(true);
-            changeUser(data.id,data.email);
+            changeUser(data.id,data.username);
             errorMsg("Login Successful!!","");
             home();
           }
@@ -79,7 +79,7 @@ export default function SignIn() {
         navigate("/app/home");
     }
     function signInCheck(){
-        if(email.length == 0){
+        if(username.length == 0){
             setStyle(false);
             errorMsg("Invalid Email!!","Email Required");
             return;
@@ -105,8 +105,8 @@ export default function SignIn() {
                 <h2>Welcome Back</h2>
                 <p>Sign in to join the watch party</p>
                 <div className="input-group">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="Enter Your Email" id="signInEmail" onChange={(e)=>{setEmail(e.target.value)}}/>
+                    <label>UserName</label>
+                    <input type="text" placeholder="Enter Your UserName" id="signInEmail" onChange={(e)=>{setName(e.target.value)}}/>
                 </div>
                 <div className="input-group">
                     <label>Password</label>
