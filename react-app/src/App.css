@@ -15,6 +15,7 @@
     --bgh : #517692;
     --background : #090908;
     --white : #ffffff;
+    --grey : #1E1E20;
 }
 
 html{
@@ -447,10 +448,10 @@ footer{
   position: fixed;
   top: 7rem;
   right:-50rem;
-  background-color: lightgreen;
+  background-color: black;
+  color: white;
   border-radius: 1rem;
-  border-left: .25rem solid green;
-  border-right: .25rem solid green;
+  border-left: .25rem solid rgb(3, 104, 48);
   flex-direction: column;
   text-align: start;
   transition: .3s all ease-in-out;

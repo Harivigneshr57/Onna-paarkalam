@@ -22,8 +22,8 @@ export default function ProfileHeader() {
         </div>
       </div>
       <div>
-           <Button>Edit Hub</Button>
+           <Button className="Edit-Profile">Edit Hub</Button>
       </div>
     </section>
   );
-}
+  }
