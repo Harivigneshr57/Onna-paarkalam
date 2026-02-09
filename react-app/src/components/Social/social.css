@@ -45,7 +45,173 @@ body{
     background: rgb(3, 11, 38);
 }
 #socialMain {
+    width: 92%;
+    margin-left: 5rem;
 }
+#socialTopBar {
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+    padding: 2rem 7rem;
+    background: linear-gradient(180deg, black 60%, transparent);
+}
+#dropdown {
+    width: 93%;
+    padding: 1rem;
+    border: 1px solid dimgray;
+    margin: 1rem;
+    border-radius: 10px;
+}
+.suggestfriend{
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid;
+    display: flex;
+}
+
+.detDiv{
+    width: 78%;
+    display: flex;
+    gap: 2rem;
+}
+img.suggestImg {
+    width: 20%;
+    border-radius: 30px;
+    border: 1px solid;
+    height: 3.5rem;
+}
+.sugBut{
+    width: 4rem;
+    font-size: 1.4rem;
+    background: #22305a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+.invitationDiv{
+    width: 30rem;
+    display: flex;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4a4a4a;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.detailDiv{
+    width: 100%;
+    height: 100%;
+}
+.detailIn {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6%;
+}
+img.invitationImage {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 43px;
+}
+
+.butDivAR{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+button#reject-btn {
+    width: 35%;
+    height: 60%;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+}
+button#accept-btn {
+    width: 35%;
+    height: 60%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background: #517692;
+}
+p.invitationPtag {
+    color: dimgray;
+    font-size: smaller;
+}
+.detailInvitation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73%;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+#socialContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+#pendingInviteDiv {
+    /* height: 20rem; */
+    /* padding: 10rem; */
+}
+
+#pendingTop {
+    /* padding: 2rem; */
+}
+
+#allFriendsBox {
+    /* padding: 10rem; */
+}
+
+#headOfAllFr {
+    /* padding: 2rem; */
+}
+
+#searchInSocial {
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #1C1C1C;
+    border: 1px solid gray;
+    color: white;
+    width: 30rem;
+}
+
+#root {
+    background: rgb(1, 9, 33);
+    color: white !important;
+}
+
+#socialNavDiv {
+    width: 5rem;
+    background: rgb(3, 11, 38);
+}
+
+#socialMain {}
+
 #socialTopBar {
     display: flex;
     height: 8rem;
@@ -55,4 +221,195 @@ body{
     width: 120rem;
     padding: 2rem 7rem;
     background: linear-gradient(180deg, black 60%, transparent);
+}
+
+
+.chat {
+    width: 28rem;
+    height: 100rem;
+    background-color: #080d12;
+    position: fixed;
+    right: 0;
+    top: 0rem;
+    border: 0.1rem solid rgb(59 56 56);
+    border-radius: 0rem 0.5rem;
+    box-shadow: -20rem 0px 20rem 20rem rgb(0 0 0 / 50%);
+}
+
+.chat-profile-pic {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.3rem solid #5a83a3;
+    overflow: hidden;
+}
+
+.chat-head {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #090909;
+    border-radius: 1rem;
+}
+
+.chat-profile-detail {
+    padding-top: 0.5rem;
+}
+
+.chat-friend-bio {
+    color: grey;
+}
+
+
+.chat-friend-name {
+    color: #5a83a3;
+}
+
+.chat-message-section {
+    height: 57%;
+    background-color: #080d12;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #3b3838;
+}
+
+.chat-profile-img {
+    width: 100%;
+    height: 120%;
+}
+
+.chat-messaging {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    width: 28rem;
+    justify-content: space-between;
+    background-color: #080d12;
+}
+
+#chat-send {
+    width: 6rem;
+    background-color: #000410;
+    font-size: 1.3rem;
+    /* font-family: system-ui; */
+    border: 0.3rem solid #5a83a3;
+    border-radius: 1rem;
+    color: #5a83a3;
+}
+
+#chat-send:hover {
+    background-color: #5a83a3;
+    color: #000410;
+}
+
+.chat-xmark {
+    background-color: black;
+    color: #5a83a3;
+    border: 0;
+    font-size: 1.5rem;
+}
+
+.chat-top-profile {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    align-items: center;
+}
+
+.chat-xmark:hover {
+    color: red;
+    border: 0;
+}
+
+#send-message {
+    font-size: 1.5rem;
+}
+
+/* #message-input */
+
+.chat-our-message {
+    width: 10rem;
+    background-color: #5a83a3;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.social-friends-column {
+    position: relative;
+    width: 100%;
+    display: flex;
+    top: 10rem;
+    left: 7rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#friendsPanel {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+}
+
+.myFriend {
+    background-color: #1e2539;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#social-profile-image {
+    background-color: black;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 3px solid #2c2c2c;
+}
+
+#inviteToWatch:hover {
+    background-color: #5a83a3;
+    color: black;
+    border: 2px solid #5a83a3;
+}
+
+#inviteToWatch {
+    background-color: black;
+    color: #5a83a3;
+    border: 2px solid #5a83a3;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 0.8rem;
+}
+
+#chat {
+    background-color: #000410;
+    color: #5a83a3;
+    border: 2px solid #5a83a3;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+}
+
+#invOrchat {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 5px;
+
+}
+
+#chat:hover {
+    color: #000410;
+    background-color: #5a83a3;
+
 }

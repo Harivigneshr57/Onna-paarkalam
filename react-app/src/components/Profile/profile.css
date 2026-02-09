@@ -17,7 +17,7 @@
   justify-content: space-between;
   background: #111722;
   padding: 2.5rem 5rem;
-  margin-top:3rem;
+  margin-top: 3rem;
   border-radius: 1.125rem;
   gap: 3rem;
 }
@@ -60,10 +60,10 @@
 }
 
 .recent {
-  display: flex
-  ;
-      flex-direction: column;
-      gap: 2rem;}
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
 .movie-list {
   display: flex;
@@ -85,7 +85,8 @@
   border-radius: 0.875rem;
   overflow: hidden;
 }
-.poster img{
+
+.poster img {
   width: 100%;
 }
 
@@ -182,3 +183,25 @@ span {
   /* margin-bottom: 1rem; */
   /* margin-top: 0.5rem; */
 }
+
+.Edit-Profile {
+  background-color: #5a83a3;
+  font-size: 1.1rem;
+  color: black;
+  border: 4px solid #5a83a3;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.Edit-Profile:hover {
+  background-color: black;
+  color: #5a83a3;
+  border: 4px solid #5a83a3;
+}
+
+/* 
+background-color: #5a83a3;
+    color: black;
+    border: 4px solid  #5a83a3;
+*/
+

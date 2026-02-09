@@ -10,6 +10,7 @@ import Discover from "./components/Discover/Discover";
 import Profile from "./components/Profile/Profile.jsx"
 import { UserProvider } from "./components/Login-SignIn/UserContext.jsx";
 import SinglePersonMovie from "./components/Single/SinglePersonMovie.jsx";
+import Room from "./components/Room/Room.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -25,6 +26,7 @@ root.render(
         <Route path="/app/discover" element={<Discover />} />
         <Route path="/app/profile" element={<Profile />} />
         <Route path="/app/single" element={<SinglePersonMovie />} />
+        <Route path="/app/room" element={<Room />} />
       </Routes>
     </BrowserRouter>
     </UserProvider>

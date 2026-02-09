@@ -74,7 +74,7 @@ module.exports = async (req, res) => {
         res.writeHead(200, { "Content-Type": "application/json" });
         return res.end(JSON.stringify({
           message: "Login successful",
-          name: user.username,
+          username: user.username,
 		  id: user.ROWID
         }));
       }
