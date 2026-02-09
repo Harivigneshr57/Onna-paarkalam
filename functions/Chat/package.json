@@ -1,8 +1,8 @@
 {
-	"name": "friends",
+	"name": "chat",
 	"version": "1.0.0",
 	"main": "index.js",
-	"author": "harivignesh.r@zohocorp.com",
+	"author": "vijay.rajapriyan@zohocorp.com",
 	"dependencies": {
 		"zcatalyst-sdk-node": "latest"
 	}
