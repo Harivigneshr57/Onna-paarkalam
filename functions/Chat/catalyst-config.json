@@ -1,6 +1,6 @@
 {
 	"deployment": {
-		"name": "auth",
+		"name": "chat",
 		"stack": "node20",
 		"type": "advancedio",
 		"env_variables": {}

@@ -1,4 +1,3 @@
-
 import { createContext, useContext, useEffect, useState } from 'react';
 import { UserContext } from "../Login-SignIn/UserContext";
 import def from "../../assets/onnapak.png";
@@ -62,7 +61,7 @@ export function MyFriend(props) {
     return (
         <>
             <div className="myFriend">
-                <img src={props.img ? props.img : def} />
+                <img src={props.img ? props.img : def} id=''/>
                 <h3>{props.name}</h3>
                 <p style={{ color: "#5a83a3" }}>{props.bio}</p>
                 <div id="invOrchat">

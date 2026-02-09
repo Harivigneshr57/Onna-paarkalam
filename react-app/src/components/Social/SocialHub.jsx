@@ -2,8 +2,8 @@ import TopBar from "./TopBar"
 import PendingInvite from "./PendingInvite"
 import AllFriends from "./AllFriends"
 import SideBar from "../Home/SideBar"
-import Chathead from "./ChatHead"
-import Chatmeassages from "./ChatMessages"
+import Chathead from "./Chathead"
+import Chatmeassages from "./Chatmessages"
 import './social.css'
 import { useState } from "react"
 
