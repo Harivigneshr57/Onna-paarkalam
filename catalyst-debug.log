@@ -1,0 +1,328 @@
+[debug] [2026-02-09T05:29:20.467Z] : 
+[debug] [2026-02-09T05:29:20.468Z] : ----------------------------------------------------------------------
+[debug] [2026-02-09T05:29:20.468Z] : Command:      /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/node /home/hari-zstk415/.nvm/versions/node/v20.19.6/bin/catalyst serve
+[debug] [2026-02-09T05:29:20.468Z] : CLI Version:  1.23.0
+[debug] [2026-02-09T05:29:20.468Z] : Platform:     linux
+[debug] [2026-02-09T05:29:20.468Z] : Node Version: v20.19.6
+[debug] [2026-02-09T05:29:20.469Z] : Time:         Mon Feb 09 2026 10:59:20 GMT+0530 (India Standard Time)
+[debug] [2026-02-09T05:29:20.469Z] : ----------------------------------------------------------------------
+[debug] [2026-02-09T05:29:20.469Z] : 
+[debug] [2026-02-09T05:29:20.725Z] : > authorizing via signed-in user option
+[debug] [2026-02-09T05:29:20.725Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2026-02-09T05:29:20.738Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113 
+
+[debug] [2026-02-09T05:29:20.920Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 09 Feb 2026 05:28:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-09T05:29:20.927Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113/environment 
+
+[debug] [2026-02-09T05:29:20.979Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 09 Feb 2026 05:28:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-09T05:29:21.064Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/get-details 
+Query params: {"feature_name":"runtime"}
+
+[debug] [2026-02-09T05:29:21.112Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 09 Feb 2026 05:28:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-09T05:29:21.114Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/30268000000011113/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2026-02-09T05:29:21.162Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 09 Feb 2026 05:28:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-02-09T05:29:21.167Z] : unknown eol undefined hence skipping check
+[debug] [2026-02-09T05:29:21.168Z] : unknown eol undefined hence skipping check
+[debug] [2026-02-09T05:29:21.495Z] : http port : '4000' is not available. Hence port '4001' will be used instead.
+[warn] [2026-02-09T05:29:21.512Z] : ⚠ skipping serve of function [chat] since the function directory(/home/hari-zstk415/Onna-paarkalam/functions/chat) does not exist
+[info] [2026-02-09T05:29:22.421Z] : [react-plugin]: Starting the development server...
+
+[info] [2026-02-09T05:29:22.422Z] : 
+[info] [2026-02-09T05:29:22.422Z] : ℹ Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2026-02-09T05:29:22.422Z] : 
+[info] [2026-02-09T05:29:22.835Z] : Skipping API Gateway rules
+[info] [2026-02-09T05:29:22.840Z] : 
+[info] [2026-02-09T05:29:22.841Z] :  >>>>>>>>>>>>> Advanced I/O <<<<<<<<<<< 
+[info] [2026-02-09T05:29:22.841Z] : ℹ auth   : http://localhost:3000/server/auth/
+[info] [2026-02-09T05:29:22.841Z] : ℹ friends: http://localhost:3000/server/friends/
+[info] [2026-02-09T05:29:22.841Z] : 
+[info] [2026-02-09T05:29:22.841Z] : 
+[info] [2026-02-09T05:29:22.841Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2026-02-09T05:29:22.841Z] : ℹ client[react-app]: http://localhost:3000/app/
+[info] [2026-02-09T05:29:22.842Z] : 
+[info] [2026-02-09T05:29:23.058Z] : [1770614963058]  "GET"  "/app/"
+[info] [2026-02-09T05:29:23.648Z] : [react-plugin]: Compiled successfully!
+[info] [2026-02-09T05:29:23.648Z] : [react-plugin]: 
+[info] [2026-02-09T05:29:23.649Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2026-02-09T05:29:23.649Z] : [react-plugin]: 
+[info] [2026-02-09T05:29:23.649Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2026-02-09T05:29:23.649Z] : [react-plugin]:   On Your Network:  http://10.89.48.203:3000/app/
+[info] [2026-02-09T05:29:23.649Z] : [react-plugin]: 
+[info] [2026-02-09T05:29:23.649Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2026-02-09T05:29:23.649Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2026-02-09T05:29:23.649Z] : [react-plugin]: 
+[info] [2026-02-09T05:29:23.737Z] : [1770614963736]  "GET"  "/src/index.js"
+[info] [2026-02-09T05:29:23.742Z] : [1770614963742]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-09T05:29:23.930Z] : [1770614963930]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-09T05:29:23.945Z] : [1770614963945]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-09T05:29:23.947Z] : [1770614963947]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-09T05:29:23.950Z] : [1770614963949]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-09T05:29:23.955Z] : [1770614963954]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-09T05:29:23.971Z] : [1770614963971]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-09T05:29:23.977Z] : [1770614963977]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-09T05:29:23.993Z] : [1770614963993]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-09T05:29:24.275Z] : [1770614964275]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:29:27.900Z] : [1770614967900]  "GET"  "/app/static/js/bundle.js.map"
+[info] [2026-02-09T05:29:30.341Z] : [1770614970341]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:29:31.332Z] : [1770614971332]  "GET"  "/app/main.a7b280a59b614c7b48fd.hot-update.json"
+[info] [2026-02-09T05:29:38.869Z] : [1770614978869]  "POST"  "/server/auth/signin"
+[info] [2026-02-09T05:29:40.057Z] : [1770614980057]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:29:40.102Z] : [1770614980102]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-09T05:29:40.110Z] : [1770614980110]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-09T05:29:40.112Z] : [1770614980112]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-09T05:29:40.114Z] : [1770614980114]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-09T05:29:40.122Z] : [1770614980122]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-09T05:29:40.126Z] : [1770614980125]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-09T05:29:40.133Z] : [1770614980132]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-09T05:29:42.462Z] : [1770614982462]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:29:42.480Z] : [1770614982480]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:29:42.484Z] : [1770614982483]  "POST"  "/server/friends/allUsers"
+[info] [2026-02-09T05:29:42.486Z] : [1770614982486]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:29:42.488Z] : [1770614982488]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:29:42.490Z] : [1770614982490]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:29:42.493Z] : [1770614982493]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:29:42.502Z] : [1770614982501]  "POST"  "/server/friends/allUsers"
+[info] [2026-02-09T05:29:42.739Z] : [1770614982739]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:29:42.835Z] : [1770614982835]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:29:42.923Z] : [1770614982923]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:29:42.928Z] : [1770614982928]  "GET"  "/app/default.png"
+[info] [2026-02-09T05:29:43.072Z] : [1770614983072]  "GET"  "/app/static/media/onnapak.b63c4691ea2df8223b24.png"
+[info] [2026-02-09T05:30:57.635Z] : [react-plugin]: Compiling...
+[info] [2026-02-09T05:30:59.485Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-09T05:30:59.486Z] : [react-plugin]: [eslint] 
+src/components/Social/AllFriends.jsx
+  Line 1:10:   'createContext' is defined but never used                                                                  no-unused-vars
+  Line 64:17:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+[info] [2026-02-09T05:30:59.486Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-09T05:30:59.486Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-09T05:30:59.512Z] : [1770615059512]  "GET"  "/app/main.13a6042a0194f781691b.hot-update.json"
+[info] [2026-02-09T05:30:59.524Z] : [1770615059524]  "GET"  "/app/main.13a6042a0194f781691b.hot-update.js"
+[info] [2026-02-09T05:33:06.790Z] : [react-plugin]: Compiling...
+[info] [2026-02-09T05:33:07.130Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-09T05:33:07.131Z] : [react-plugin]: [eslint] 
+src/components/Social/AllFriends.jsx
+  Line 1:10:   'createContext' is defined but never used                                                                  no-unused-vars
+  Line 64:17:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+[info] [2026-02-09T05:33:07.131Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-09T05:33:07.131Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-09T05:33:07.165Z] : [1770615187165]  "GET"  "/app/main.aee60380cd764113ef21.hot-update.json"
+[debug] [2026-02-09T05:33:07.166Z] : > refreshing access token <
+[debug] [2026-02-09T05:33:07.169Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2026-02-09T05:33:07.393Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 09 Feb 2026 05:32:39 GMT","content-type":"application/json;charset=UTF-8","content-length":"2442","connection":"keep-alive","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2026-02-09T05:33:07.433Z] : [1770615187433]  "GET"  "/app/main.aee60380cd764113ef21.hot-update.js"
+[info] [2026-02-09T05:33:08.998Z] : [1770615188998]  "GET"  "/app/social"
+[info] [2026-02-09T05:33:09.037Z] : [1770615189036]  "GET"  "/src/index.js"
+[info] [2026-02-09T05:33:09.058Z] : [1770615189058]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-09T05:33:09.236Z] : [1770615189236]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-09T05:33:09.248Z] : [1770615189248]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:33:09.250Z] : [1770615189250]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:33:09.252Z] : [1770615189252]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:33:09.254Z] : [1770615189254]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:33:09.257Z] : [1770615189257]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:33:09.265Z] : [1770615189265]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:33:09.385Z] : [1770615189385]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:33:13.320Z] : [1770615193320]  "GET"  "/app/"
+[info] [2026-02-09T05:33:13.332Z] : [1770615193332]  "GET"  "/src/index.js"
+[info] [2026-02-09T05:33:13.366Z] : [1770615193366]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-09T05:33:13.545Z] : [1770615193545]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-09T05:33:13.556Z] : [1770615193556]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-09T05:33:13.560Z] : [1770615193560]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-09T05:33:13.574Z] : [1770615193574]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-09T05:33:13.575Z] : [1770615193575]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-09T05:33:13.584Z] : [1770615193584]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-09T05:33:13.588Z] : [1770615193588]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-09T05:33:13.590Z] : [1770615193590]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-09T05:33:13.703Z] : [1770615193702]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:33:16.502Z] : [1770615196501]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:33:23.260Z] : [1770615203260]  "POST"  "/server/auth/signin"
+[info] [2026-02-09T05:33:23.685Z] : [1770615203685]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-09T05:33:23.687Z] : [1770615203686]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:33:23.693Z] : [1770615203692]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-09T05:33:23.694Z] : [1770615203694]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-09T05:33:23.695Z] : [1770615203695]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-09T05:33:23.696Z] : [1770615203696]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-09T05:33:23.715Z] : [1770615203715]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-09T05:33:23.719Z] : [1770615203719]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-09T05:33:23.723Z] : [1770615203723]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-09T05:33:23.735Z] : [1770615203734]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-09T05:33:23.739Z] : [1770615203739]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-09T05:33:23.743Z] : [1770615203743]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-09T05:33:23.755Z] : [1770615203755]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-09T05:33:23.758Z] : [1770615203757]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-09T05:33:23.759Z] : [1770615203759]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-09T05:33:25.333Z] : [1770615205333]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:33:25.344Z] : [1770615205344]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:33:25.346Z] : [1770615205346]  "POST"  "/server/friends/allUsers"
+[info] [2026-02-09T05:33:25.347Z] : [1770615205347]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:33:25.348Z] : [1770615205348]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:33:25.349Z] : [1770615205349]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:33:25.350Z] : [1770615205350]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:33:25.356Z] : [1770615205356]  "POST"  "/server/friends/allUsers"
+[info] [2026-02-09T05:33:25.740Z] : [1770615205740]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:33:25.746Z] : [1770615205745]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:33:25.831Z] : [1770615205831]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:33:25.837Z] : [1770615205837]  "GET"  "/app/default.png"
+[info] [2026-02-09T05:33:25.907Z] : [1770615205906]  "GET"  "/app/static/media/onnapak.b63c4691ea2df8223b24.png"
+[info] [2026-02-09T05:34:22.100Z] : [react-plugin]: Compiling...
+[info] [2026-02-09T05:34:22.590Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-09T05:34:22.590Z] : [react-plugin]: [eslint] 
+src/components/Social/AllFriends.jsx
+  Line 1:10:   'createContext' is defined but never used                                                                  no-unused-vars
+  Line 64:17:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+[info] [2026-02-09T05:34:22.590Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-09T05:34:22.590Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-09T05:34:22.612Z] : [1770615262612]  "GET"  "/app/main.69fb7f35e3bcade28c60.hot-update.json"
+[info] [2026-02-09T05:34:22.624Z] : [1770615262624]  "GET"  "/app/main.69fb7f35e3bcade28c60.hot-update.js"
+[info] [2026-02-09T05:34:25.736Z] : [react-plugin]: Compiling...
+[info] [2026-02-09T05:34:25.892Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-09T05:34:25.892Z] : [react-plugin]: [eslint] 
+src/components/Social/AllFriends.jsx
+  Line 1:10:   'createContext' is defined but never used                                                                  no-unused-vars
+  Line 64:17:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+[info] [2026-02-09T05:34:25.892Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-09T05:34:25.892Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-09T05:34:25.909Z] : [1770615265909]  "GET"  "/app/main.59f442f559ad116786c2.hot-update.json"
+[info] [2026-02-09T05:34:25.917Z] : [1770615265917]  "GET"  "/app/main.59f442f559ad116786c2.hot-update.js"
+[info] [2026-02-09T05:34:26.611Z] : [1770615266611]  "GET"  "/app/social"
+[info] [2026-02-09T05:34:26.639Z] : [1770615266638]  "GET"  "/src/index.js"
+[info] [2026-02-09T05:34:26.644Z] : [1770615266643]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-09T05:34:26.821Z] : [1770615266821]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-09T05:34:26.833Z] : [1770615266833]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:34:26.836Z] : [1770615266835]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:34:26.837Z] : [1770615266837]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:34:26.841Z] : [1770615266841]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:34:26.846Z] : [1770615266846]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:34:26.848Z] : [1770615266848]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:34:27.464Z] : [1770615267463]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:34:29.794Z] : [1770615269793]  "GET"  "/app/social"
+[info] [2026-02-09T05:34:29.817Z] : [1770615269816]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-09T05:34:29.820Z] : [1770615269820]  "GET"  "/src/index.js"
+[info] [2026-02-09T05:34:29.897Z] : [1770615269897]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-09T05:34:29.916Z] : [1770615269916]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:34:29.918Z] : [1770615269918]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:34:29.919Z] : [1770615269919]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:34:29.920Z] : [1770615269920]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:34:29.922Z] : [1770615269922]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:34:29.927Z] : [1770615269926]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:34:30.021Z] : [1770615270021]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:34:31.447Z] : [1770615271447]  "GET"  "/app/"
+[info] [2026-02-09T05:34:31.465Z] : [1770615271465]  "GET"  "/src/index.js"
+[info] [2026-02-09T05:34:31.495Z] : [1770615271495]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-09T05:34:31.658Z] : [1770615271657]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-09T05:34:31.687Z] : [1770615271686]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-09T05:34:31.689Z] : [1770615271689]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-09T05:34:31.706Z] : [1770615271706]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-09T05:34:31.710Z] : [1770615271710]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-09T05:34:31.713Z] : [1770615271713]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-09T05:34:31.718Z] : [1770615271717]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-09T05:34:31.725Z] : [1770615271724]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-09T05:34:31.857Z] : [1770615271857]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:34:33.651Z] : [1770615273651]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:34:42.188Z] : [1770615282187]  "POST"  "/server/auth/signin"
+[info] [2026-02-09T05:34:42.534Z] : [1770615282534]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:34:42.564Z] : [1770615282564]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-09T05:34:42.567Z] : [1770615282566]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-09T05:34:42.568Z] : [1770615282568]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-09T05:34:42.569Z] : [1770615282569]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-09T05:34:42.570Z] : [1770615282570]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-09T05:34:42.571Z] : [1770615282571]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-09T05:34:42.585Z] : [1770615282584]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-09T05:34:44.625Z] : [1770615284624]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:34:44.626Z] : [1770615284626]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:34:44.630Z] : [1770615284629]  "POST"  "/server/friends/allUsers"
+[info] [2026-02-09T05:34:44.633Z] : [1770615284633]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:34:44.635Z] : [1770615284635]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:34:44.637Z] : [1770615284637]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:34:44.638Z] : [1770615284638]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:34:44.646Z] : [1770615284645]  "POST"  "/server/friends/allUsers"
+[info] [2026-02-09T05:34:44.794Z] : [1770615284794]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:34:44.807Z] : [1770615284807]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:34:44.888Z] : [1770615284888]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:34:44.916Z] : [1770615284916]  "GET"  "/app/static/media/onnapak.b63c4691ea2df8223b24.png"
+[info] [2026-02-09T05:34:44.923Z] : [1770615284923]  "GET"  "/app/default.png"
+[info] [2026-02-09T05:36:07.027Z] : [react-plugin]: Compiling...
+[info] [2026-02-09T05:36:07.312Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2026-02-09T05:36:07.312Z] : [react-plugin]: [eslint] 
+src/components/Social/AllFriends.jsx
+  Line 1:10:   'createContext' is defined but never used                                                                  no-unused-vars
+  Line 64:17:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+[info] [2026-02-09T05:36:07.312Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2026-02-09T05:36:07.313Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2026-02-09T05:36:07.353Z] : [1770615367353]  "GET"  "/app/main.cd277d770e2503abecf1.hot-update.json"
+[info] [2026-02-09T05:36:07.366Z] : [1770615367365]  "GET"  "/app/main.cd277d770e2503abecf1.hot-update.js"
+[info] [2026-02-09T05:36:07.936Z] : [1770615367936]  "GET"  "/app/social"
+[info] [2026-02-09T05:36:07.964Z] : [1770615367964]  "GET"  "/src/index.js"
+[info] [2026-02-09T05:36:07.969Z] : [1770615367969]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-09T05:36:08.168Z] : [1770615368167]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-09T05:36:08.181Z] : [1770615368181]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:36:08.183Z] : [1770615368183]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:36:08.185Z] : [1770615368185]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:36:08.187Z] : [1770615368187]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:36:08.190Z] : [1770615368190]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:36:08.195Z] : [1770615368195]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:36:08.469Z] : [1770615368468]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:36:10.483Z] : [1770615370482]  "GET"  "/app/"
+[info] [2026-02-09T05:36:10.493Z] : [1770615370493]  "GET"  "/src/index.js"
+[info] [2026-02-09T05:36:10.500Z] : [1770615370499]  "GET"  "/app/static/js/bundle.js"
+[info] [2026-02-09T05:36:10.692Z] : [1770615370692]  "GET"  "/app/static/media/image.051128df86c06214873e.png"
+[info] [2026-02-09T05:36:10.722Z] : [1770615370722]  "GET"  "/app/static/media/logo.8624afdae922a59af700.png"
+[info] [2026-02-09T05:36:10.727Z] : [1770615370727]  "GET"  "/app/static/media/Avenger.a7f90d1ff7e8efbd0018.png"
+[info] [2026-02-09T05:36:10.730Z] : [1770615370730]  "GET"  "/app/static/media/SpiderMan.df7b7c02aa8d2a0579e1.png"
+[info] [2026-02-09T05:36:10.742Z] : [1770615370742]  "GET"  "/app/static/media/KGF.79f5929d0fd1b7232f51.png"
+[info] [2026-02-09T05:36:10.747Z] : [1770615370747]  "GET"  "/app/static/media/Tmovie1.9f5fcd656c9cfc693e2c.png"
+[info] [2026-02-09T05:36:10.752Z] : [1770615370752]  "GET"  "/app/static/media/Thunivu.ef01016d556c09bc315b.png"
+[info] [2026-02-09T05:36:10.757Z] : [1770615370756]  "GET"  "/app/static/media/Master.2ed584040ec1b289174f.png"
+[info] [2026-02-09T05:36:10.856Z] : [1770615370856]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:36:12.535Z] : [1770615372535]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:36:20.306Z] : [1770615380306]  "POST"  "/server/auth/signin"
+[info] [2026-02-09T05:36:20.660Z] : [1770615380660]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:36:20.699Z] : [1770615380698]  "GET"  "/app/static/media/bigMovie.6c82eda5a61ef2b0c922.png"
+[info] [2026-02-09T05:36:20.705Z] : [1770615380705]  "GET"  "/app/static/media/Bigil.6e0060e53af9f905a773.png"
+[info] [2026-02-09T05:36:20.707Z] : [1770615380706]  "GET"  "/app/static/media/Leo.0a1d55f11713b4691da6.png"
+[info] [2026-02-09T05:36:20.708Z] : [1770615380708]  "GET"  "/app/static/media/LoveToday.ca2c5a7dd4e28fcf09c4.png"
+[info] [2026-02-09T05:36:20.710Z] : [1770615380709]  "GET"  "/app/static/media/Madharasi.be7d65db26b82c5ccb4d.png"
+[info] [2026-02-09T05:36:20.713Z] : [1770615380713]  "GET"  "/app/static/media/SooraraiPotru.817bf6f4133759cb3d22.png"
+[info] [2026-02-09T05:36:20.722Z] : [1770615380722]  "GET"  "/app/static/media/VadaChennai.9d8ac772c455ae76e937.png"
+[info] [2026-02-09T05:36:21.813Z] : [1770615381813]  "GET"  "/app/src/assets/logo.png"
+[info] [2026-02-09T05:36:21.822Z] : [1770615381822]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:36:21.824Z] : [1770615381824]  "POST"  "/server/friends/allUsers"
+[info] [2026-02-09T05:36:21.827Z] : [1770615381825]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:36:21.828Z] : [1770615381828]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:36:21.829Z] : [1770615381829]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:36:21.830Z] : [1770615381830]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:36:21.839Z] : [1770615381839]  "POST"  "/server/friends/allUsers"
+[info] [2026-02-09T05:36:22.108Z] : [1770615382108]  "POST"  "/server/friends/reqFriends"
+[info] [2026-02-09T05:36:22.111Z] : [1770615382111]  "POST"  "/server/friends/allFriends"
+[info] [2026-02-09T05:36:22.248Z] : [1770615382248]  "POST"  "/app/server/friends/allFriends"
+[info] [2026-02-09T05:36:22.261Z] : [1770615382260]  "GET"  "/app/default.png"
+[info] [2026-02-09T05:36:22.314Z] : [1770615382314]  "GET"  "/app/static/media/onnapak.b63c4691ea2df8223b24.png"
+[info] [2026-02-09T05:36:23.374Z] : [1770615383374]  "GET"  "/app/src/assets/logo.png"

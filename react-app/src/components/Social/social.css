@@ -14,14 +14,13 @@ body{
 
 
 #pendingInviteDiv{
-    height: 20rem;
-    padding:10rem;
+    padding:5rem;
 }
 #pendingTop{
     padding: 2rem;
 }
 #allFriendsBox {
-    padding: 10rem;
+    padding: 5rem;
 }
 #headOfAllFr {
     padding: 2rem;

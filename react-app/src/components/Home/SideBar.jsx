@@ -15,6 +15,9 @@ export default function SideBar(){
     function discover(){
         navigate("/app/discover")
     }
+    function room(){
+        navigate("/app/room")
+    }
     return(
         <>
         <aside>
@@ -25,7 +28,7 @@ export default function SideBar(){
                 <Button icon={<i class="fa-solid fa-house"></i>} onClick={home}>Home</Button>
                 <Button icon={<i class="fa-solid fa-compass"></i>} onClick={discover}>Discover</Button>
                 <Button icon={<i class="fa-solid fa-users"></i>} onClick={social}>Social</Button>
-                <Button icon={<i class="fa-solid fa-door-open"></i>}>Room</Button>
+                <Button icon={<i class="fa-solid fa-door-open"></i> } onClick={room}>Room</Button>
             </div>
             <div className="user-nav">
                 <Button icon={<i class="fa-solid fa-circle-user"></i>} onClick={profile}>Profile</Button>

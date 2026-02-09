@@ -45,8 +45,8 @@ export function FriendPanel({ currentUser, handleUser, displayChat,refresh }) {
     return (
         <>
             <div id="friendsPanel">
-                {friends.map((friend) => (
-                    <MyFriend img={friend.users.img} name={friend.users.username} bio={friend.users.bio} handleUser={handleUser} key={currentUser}   displayChat={displayChat}></MyFriend>
+                {friends.map((friend,i) => (
+                    <MyFriend img={friend.users.img} name={friend.users.username} bio={friend.users.bio} handleUser={handleUser} key={i}   displayChat={displayChat}></MyFriend>
                 ))}
             </div>
         </>
@@ -61,7 +61,7 @@ export function MyFriend(props) {
     return (
         <>
             <div className="myFriend">
-                <img src={props.img ? props.img : def} id=''/>
+                <img src={props.img ? props.img : def} id='social-profile-image'/>
                 <h3>{props.name}</h3>
                 <p style={{ color: "#5a83a3" }}>{props.bio}</p>
                 <div id="invOrchat">
