@@ -359,7 +359,7 @@ body {
 
 .myFriend {
     background-color: #1e2539;
-    padding: 2rem 4rem;
+    padding: 2rem ;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -411,4 +411,14 @@ body {
     color: #000410;
     background-color: #5a83a3;
 
+}
+
+
+#social-profile-image {
+    background-color: black;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 3px solid #2c2c2c;
 }

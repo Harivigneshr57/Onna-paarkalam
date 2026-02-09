@@ -1,5 +1,5 @@
 import InvitationGroup from './InvitationGroup'
-export default function PendingInvite() {
+export default function PendingInvite({onAcceptDone}) {
 
     return (
         <>
@@ -9,7 +9,7 @@ export default function PendingInvite() {
 
                 </div>
                 <div id="pendingMain">
-                    <InvitationGroup></InvitationGroup>
+                    <InvitationGroup onAcceptDone={onAcceptDone}></InvitationGroup>
                 </div>
             </div>
         </>
