@@ -15,15 +15,6 @@ function Chatmeassages() {
         setMessage("");
     }
 
-    // function message(role, message) {
-    //     if (role === "me") {
-    //         return <Ourmessage message={messageinput}></Ourmessage>
-    //     }
-    //     else {
-
-    //     }
-    // }
-
     return <>
         <div className="chat-message-section">
             <div className="chat-meassages">
@@ -34,7 +25,7 @@ function Chatmeassages() {
                 </div>
             </div>
             <div className="chat-messaging">
-                <input type="text" placeholder="Type your message here.." id="message-input" onChange={handleinput} autocomplete="off" />
+                <input type="text" placeholder="Type your message here.." id="message-input" onChange={handleinput} autoComplete="off" />
                 <button id="chat-send" onClick={addtoArray}><i className="fa-solid fa-paper-plane" id="send-message"></i></button>
             </div>
         </div>

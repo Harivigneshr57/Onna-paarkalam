@@ -32,7 +32,6 @@ export default function SideBar(){
             </div>
             <div className="user-nav">
                 <Button icon={<i class="fa-solid fa-circle-user"></i>} onClick={profile}>Profile</Button>
-                <Button icon={<i class="fa-solid fa-gear"></i>}>Settings</Button>
             </div>
         </aside>
         </>
