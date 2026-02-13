@@ -1,7 +1,7 @@
 import bgImage from "../../assets/image.png";
 import Button from "./Button";
-import Msg from './ErrorMsg'
 import { UserContext } from "./UserContext";
+import toast from "react-hot-toast";
 import { useState ,useContext} from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -14,12 +14,33 @@ export default function Login(){
 
     const [username, setName] = useState("");
     const [password, setPassword] = useState("");
-    const [showMsg, setShowMsg] = useState(false);
-    const [style, setStyle] = useState(false);
-    const [title, setTitle] = useState("");
-    const [error, setError] = useState("");
     const {user,changeUser} = useContext(UserContext);
-
+    const toastErrorStyle = {
+        style: {
+          borderRadius: "1rem",
+          background: "var(--error)",
+          color: "white",
+          fontWeight: 600,
+          minWidth: "26rem",   
+        },
+        iconTheme: {
+          fontWeight: 600,
+          secondary: "var(--white)",
+        },
+      };
+      const toastSuccessStyle = {
+        style: {
+          borderRadius: "1rem",
+          background: "#16A34A",
+          color: "white",
+          fontWeight: 600
+        },
+        iconTheme: {
+          primary: "white",
+          secondary: "#16A34A"
+        }
+      };
+      
     async function signup() {
         let data;
         const response = await fetch("/server/auth/signup", {
@@ -33,15 +54,12 @@ export default function Login(){
         console.log(data);
       
         if (data.message === "User already exists") {
-            setStyle(false);
-            errorMsg("User Already Exist", "UserName Already Taken");
+            toast.error('UserName Already Taken !!',toastErrorStyle)
         } else if (data.message === "Signup successful") {
-            setStyle(true);
-            errorMsg("Signup Successful!!", "U can SignIn");
+            toast.success('SignUp Successful, you can SignIn !!',toastSuccessStyle)
             navigates();
         } else {
-            setStyle(false);
-            errorMsg("Server Error", "Try again later");
+            toast.error('Server Error !!',toastErrorStyle);
         }
       }
       
@@ -49,32 +67,21 @@ export default function Login(){
 
     function loginCheck() {
         if (username.length === 0) {
-            setStyle(false);
-            errorMsg("Enter Name!!", "Name should not be Empty");
+            toast.error('UserName Should Not Be Empty !!',toastErrorStyle)
             return;
         }
         if(username.length < 5){
-            setStyle(false);
-            errorMsg("Invalid Name!!","Name should contains 5 char atLeast")
+            toast.error('UserName Should Contain AtLeast 5 Char !!')
             return;
         }
       
         if (password.length < 6) {
-            setStyle(false);
-            errorMsg("Weak Password!!", "Password must be at least 6 characters");
+            toast.error('Password Should Contain AtLeast 6 Char !!',toastErrorStyle)
             return;
         }
       
         signup();
       }
-      
-
-    function errorMsg(title,error){
-        setTitle(title);
-        setError(error);
-        setShowMsg(true);
-        setTimeout(() => setShowMsg(false), 2000);
-    }
 
     return(
         <>
@@ -84,13 +91,12 @@ export default function Login(){
                     <h6>Host private rooms, share laughs in real-time, and experience premium cinema with friends anywhere.</h6>
                     <input type="text" placeholder="Enter Your UserName" id="loginName" style={{width:"30rem"}}  value={username} onChange={(e) => setName(e.target.value)}/>
                     <div className="loginPass flex">
-                        <input type="password" placeholder="Enter Your Password" id="loginPassword" style={{width:"25rem"}} value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
-                        <Button className="bigbutton" onClick={loginCheck} id="signUp">Login</Button>
+                        <input type="password" placeholder="Enter Your Password" id="loginPassword" style={{width:"24rem"}} value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
+                        <Button className="bigbutton" onClick={loginCheck} id="signUp">Sign Up</Button>
                     </div>
                     <p>Ready to Start? Use for free</p>
                 </div>
             </main>
-            <Msg show={showMsg} title={title} error={error} style={style}></Msg>
         </>
     )
 } 

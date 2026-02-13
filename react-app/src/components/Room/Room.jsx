@@ -7,12 +7,18 @@ import SelectedMovie from "./SelectedMovie";
 import './room.css';
 export default function Room(){
     const [step,setStep] = useState(1);
-    const [movie,setMovie] = useState('');
+    const [movie,setMovie] = useState({});
+    function onSetMovie(movie){
+        setMovie(movie);
+    }
+    function onSetStep(step){
+        setStep(step);
+    }
     return (
         <>
-            <div id="room flex">
+            <div id="room" className="flex">
                 <SideBar></SideBar>
-                {step==1?<SelectMovie onStep={setStep} onMovie={setMovie} step={step}></SelectMovie>:step==2?<ConfigMovie onStep={setStep} step={step}></ConfigMovie>:<InviteMovie onStep={setStep} step={step}></InviteMovie>}
+                {step==1?<SelectMovie onStep={onSetStep} onMovie={onSetMovie} step={step} movie={movie}></SelectMovie>:step==2?<ConfigMovie onStep={setStep} step={step}></ConfigMovie>:<InviteMovie onStep={setStep} step={step}></InviteMovie>}
                 <SelectedMovie movie={movie}></SelectedMovie>
             </div>
         </>

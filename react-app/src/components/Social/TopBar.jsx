@@ -52,8 +52,17 @@ export default function TopBar() {
         console.log("friends updated", friends);
     }, [friends]);
     function searchFriend(e) {
-        setInputval(e.target.value);
-        console.log("typing");
+        if(!e.target.value){
+            setShowDiv(false);
+        }
+        else{
+            setShowDiv(true)
+
+            setInputval(e.target.value);
+            console.log(e.target.value);
+     
+        }
+
     }
     const filterNameArray = users.filter((ele) => {
         return ele.username.toLowerCase().includes(inputval.toLowerCase());
@@ -63,29 +72,28 @@ export default function TopBar() {
     return (
         <>
             <div id="socialTopBar">
+            
                 <h2>Social Hub</h2>
                 <div style={{width:"30%",height:"100%",display:"flex",flexDirection:"column",alignItems:"center"}}>
-                    <input style={{width:"95%"}} onFocus={() => setShowDiv(true)} onChange={searchFriend} type="text" id="searchInSocial" placeholder="Search your friends or add friend..."></input>
-                    <div style={{display:showDiv?"block":"none"}} id="dropdown">
+                    <input onChange={searchFriend} type="text" id="searchInSocial" placeholder="Search your friends or add friend..."></input>
+                    
+
+                </div>
+            </div>
+            <div style={{display:showDiv?"block":"none"}} id="dropdown">
                         {filterNameArray.map((ele) => {
                             const isFriend = friends.some(
                                 friend => friend.username === ele.username
                             );
 
                             return (
-                                <div key={ele.username}>
-                                    <div>
+                            
                                         <SuggestUser img={""} name={ele.username} bio={"hello"} isFriend={isFriend}></SuggestUser>
 
-                                    </div>
-                                </div>
                             );
                         })}
 
                     </div>
-
-                </div>
-            </div>
         </>
     )
 }

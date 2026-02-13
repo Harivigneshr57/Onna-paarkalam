@@ -8,20 +8,20 @@ import './social.css'
 import { useState } from "react"
 
 export default function SocialHub() {
-const[refresh,setRefresh]=useState(false);
-const [currentUser,setUser]=useState(""); 
-    const [chatBox,setchatBox]=useState(false);
+    const [refresh, setRefresh] = useState(false);
+    const [currentUser, setUser] = useState("");
+    const [chatBox, setchatBox] = useState(false);
 
-    function handleUser(friend){
+    function handleUser(friend) {
         setUser(friend);
-        console.log("Hello "+friend);
+        console.log("Hello " + friend);
     }
 
-    function displayChat(){
+    function displayChat() {
         setchatBox(true);
     }
 
-    function hideChat(){
+    function hideChat() {
         setchatBox(false);
     }
 
@@ -32,13 +32,13 @@ const [currentUser,setUser]=useState("");
                 <div id="socialMain">
                     <TopBar></TopBar>
                     <div className="social-friends-column">
-                    <PendingInvite onAcceptDone={() => setRefresh(!refresh)}></PendingInvite>
-                    <AllFriends handleUser={handleUser} refresh={refresh} currentUser={currentUser} displayChat={displayChat} ></AllFriends>
+                        <PendingInvite onAcceptDone={() => setRefresh(!refresh)}></PendingInvite>
+                        <AllFriends handleUser={handleUser} refresh={refresh} currentUser={currentUser} displayChat={displayChat} ></AllFriends>
                     </div>
-                    <div className="chat" style={{display:chatBox?'block':'none'}} >
+                    <div className="chat" style={{ display: chatBox ? 'block' : 'none' }} >
                         <Chathead hideChat={hideChat} currentUser={currentUser}></Chathead>
                         <div className="line" />
-                        <Chatmeassages></Chatmeassages>
+                        <Chatmeassages currentUser={currentUser}></Chatmeassages>
                     </div>
                 </div>
             </div>

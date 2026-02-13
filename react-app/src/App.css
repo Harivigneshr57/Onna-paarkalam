@@ -16,6 +16,8 @@
     --background : #090908;
     --white : #ffffff;
     --grey : #1E1E20;
+    --input:#1c1c1c;
+    --error: #ff4d4f;
 }
 
 html{
@@ -184,7 +186,7 @@ input{
   border-radius: .5rem;
   font-size: 1rem;
   font-weight: 600;
-  background-color: #1C1C1C;
+  background-color: var(--input);
   border: 1px solid gray;
   color: var(--white);
 }

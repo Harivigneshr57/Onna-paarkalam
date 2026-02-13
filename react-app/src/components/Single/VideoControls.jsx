@@ -36,7 +36,6 @@ export default function VideoControls({reference}){
             <p className="time" id="current_time">{currentTime}</p>
                 <input onChange={movementOfRange} type="range" id="playback"min={0} max={100} value={reference.current?(reference.current.currentTime/reference.current.duration)*100:0}></input>
             <p className="time" id="total_time">{duration}</p>
-
             </div>
         </div>
     )

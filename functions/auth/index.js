@@ -55,7 +55,7 @@ module.exports = async (req, res) => {
         }
 
         const result = await zcql.executeZCQLQuery(
-          `SELECT ROWID , password, username FROM users WHERE username='${username}'`
+          `SELECT ROWID , password, username , bio FROM users WHERE username='${username}'`
         );
 
         if (result.length === 0) {
@@ -75,7 +75,8 @@ module.exports = async (req, res) => {
         return res.end(JSON.stringify({
           message: "Login successful",
           username: user.username,
-		  id: user.ROWID
+		      id: user.ROWID,
+          bio:user.bio
         }));
       }
 

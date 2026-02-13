@@ -1,6 +1,7 @@
 import { useContext,useState } from "react";
 import { UserContext } from "../Login-SignIn/UserContext";
 import Msg from '../Login-SignIn/ErrorMsg';
+import def from '../../assets/onnapak.png'
 
 
 export default function SuggestUser({img,name,bio,isFriend}){
@@ -8,6 +9,7 @@ export default function SuggestUser({img,name,bio,isFriend}){
     const [showMsg, setShowMsg] = useState(false);
     const [isSent,setSend]=useState(false);
     const reqFriend = async () => {
+        console.log('hi');
         console.log("SENDING:", {
             username: user.username,
             friendname:name
@@ -34,16 +36,16 @@ export default function SuggestUser({img,name,bio,isFriend}){
       };
 
     return(
-        <div className="suggestfriend">
+        <div className="suggestfriend" style={{cursor:"pointer"}}>
             <div className="detDiv">
-            <img className="suggestImg" src={img===""?"./default.png":img}></img>
+            <img className="suggestImg" src={img===""?def:img}></img>
             <div>
                 <h3>{name}</h3>
                 <p id="bioOfSuggest">{bio}</p>
             </div>
             </div>
           
-            {isFriend?"":<button className="sugBut" onClick={() => reqFriend()}><i class="fa-solid fa-user-plus"></i></button>}
+            {isFriend?"":<button className="sugBut" onClick={()=>reqFriend()}><i class="fa-solid fa-user-plus"></i></button>}
             <Msg show={showMsg} title={isSent ?"Request Already sent":"Request Succesfully Sended"} error="" style="Msg"></Msg>
         </div>
     )

@@ -204,12 +204,24 @@ div#movieitems {
     height: 6rem;
 }
 body {
-    background: linear-gradient(
-        180deg,
-        #020613 0%,
-        #08122f 60%,
-        #050b1f 100%
-    );
-    background-attachment: fixed;   
-    color: white;
+    background-color: var(--background);
+}
+
+#disTopBar{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem 2rem 7.5rem;
+    background: black;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    position: fixed;
+    height: 6rem;
+}
+#disTopBar i{
+    color: var(--white);
 }

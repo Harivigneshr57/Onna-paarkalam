@@ -78,7 +78,9 @@ export default function InvitationGroup({onAcceptDone}) {
     return (
         <>
            {invitations.length === 0 ? (
-                <p style={{textAlign:'center'}}>No invitations</p>
+                <div style={{width:"50rem",borderRadius:"15px",padding:"3rem",display:"flex",justifyContent:"center",alignItems:"center"}}>
+                    <p style={{textAlign:'center'}}>No invitations</p>
+                </div>
             ) : (
                 invitations.map((inv) => (
                     <div key={inv.username}>

@@ -1,8 +1,7 @@
 const stats = [
-  { label: "Movies", value: 247 },
+  { label: "Movies Watched", value: 10 },
   { label: "Watch Time", value: "486h" },
-  { label: "Friends", value: "1.2k" },
-  { label: "Trophies", value: 18 },
+  { label: "Friends", value: "5" },
 ];
 
 export default function StatsBar() {

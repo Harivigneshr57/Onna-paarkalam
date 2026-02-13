@@ -1,9 +1,0 @@
-{
-	"name": "friends",
-	"version": "1.0.0",
-	"main": "index.js",
-	"author": "harivignesh.r@zohocorp.com",
-	"dependencies": {
-		"zcatalyst-sdk-node": "latest"
-	}
-}

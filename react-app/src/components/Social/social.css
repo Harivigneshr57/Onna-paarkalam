@@ -1,168 +1,68 @@
-body{
-    width: 100vw;
-    height: 100vh;
-}
-#root {
-    width: 100%;
-    height: 100%;
-}
-#socialContainer{
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
 
-
-#pendingInviteDiv{
-    padding:5rem;
-}
-#pendingTop{
-    padding: 2rem;
-}
-#allFriendsBox {
-    padding: 5rem;
-}
-#headOfAllFr {
-    padding: 2rem;
-}
-#searchInSocial {
-    padding: 1.25rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: #1C1C1C;
-    border: 1px solid gray;
-    color: white;
-    width: 30rem;
-}
-#root{
-    background: rgb(1, 9, 33);
-    color: white !important;
-}
-#socialNavDiv{
-    width: 5rem;
-    background: rgb(3, 11, 38);
-}
-#socialMain {
-    width: 92%;
-    margin-left: 5rem;
-}
-#socialTopBar {
-    display: flex;
-    height: 8rem;
-    justify-content: space-between;
-    padding: 2rem;
-    position: fixed;
-    width: 100%;
-    padding: 2rem 7rem;
-    background: linear-gradient(180deg, black 60%, transparent);
-}
 #dropdown {
-    width: 93%;
-    padding: 1rem;
     border: 1px solid dimgray;
+    border-radius: 10px;
     margin: 1rem;
-    border-radius: 10px;
-}
-.suggestfriend{
-    width: 90%;
     padding: 1rem;
-    margin: 1rem;
-    border: 1px solid;
-    display: flex;
+    position: absolute;
+    width: 23%;
+    right: 8rem;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 7rem;
 }
-
-.detDiv{
-    width: 78%;
-    display: flex;
-    gap: 2rem;
-}
-img.suggestImg {
-    width: 20%;
-    border-radius: 30px;
-    border: 1px solid;
-    height: 3.5rem;
-}
-.sugBut{
-    width: 4rem;
-    font-size: 1.4rem;
-    background: #22305a;
-    color: white;
-    border: none;
-    border-radius: 6px;
-}
-.invitationDiv{
-    width: 30rem;
-    display: flex;
-    height: 7rem;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #4a4a4a;
-    padding: 1rem;
-    border-radius: 20px;
-}
-.detailDiv{
-    width: 100%;
-    height: 100%;
-}
-.detailIn {
-    width: 68%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 6%;
-}
-img.invitationImage {
-    width: 4.3rem;
-    height: 4.3rem;
-    border-radius: 43px;
-}
-
-.butDivAR{
-    display: flex;
-    width: 30%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 8%;
-}
-button#reject-btn {
-    width: 35%;
-    height: 60%;
-    font-size: 1.3rem;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    color: white;
-}
-button#accept-btn {
-    width: 35%;
-    height: 60%;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    border: none;
-    background: #517692;
-}
-p.invitationPtag {
-    color: dimgray;
-    font-size: smaller;
-}
-.detailInvitation{
+.suggestfriend {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 73%;
+    padding: 1rem;
+    border-radius: 12px;
+    background: #161616;
+    transition: 0.3s;
+    margin-bottom: 0.7rem;
+}
+
+.suggestfriend:hover {
+    background-color: var(--grey);
+    transform: translateY(-3px);
+}
+
+.detDiv {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.suggestImg {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#socialMain h3 {
+    color: white;
+}
+.sugBut {
+    background: #5a83a3;
+    border: none;
+    padding: 0.7rem 0.8rem;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sugBut:hover {
+    background: #526b9f;
 }
 body {
     width: 100vw;
     height: 100vh;
 }
 
-#root {
-    width: 100%;
-    height: 100%;
-}
+
 
 #socialContainer {
     width: 100%;
@@ -170,22 +70,10 @@ body {
     display: flex;
 }
 
-
-#pendingInviteDiv {
-    /* height: 20rem; */
-    /* padding: 10rem; */
-}
-
-#pendingTop {
-    /* padding: 2rem; */
-}
-
-#allFriendsBox {
-    /* padding: 10rem; */
-}
-
-#headOfAllFr {
-    /* padding: 2rem; */
+#bioOfSuggest {
+    font-size: small;
+    color: lightslategray;
+    margin-top: 0.4rem;
 }
 
 #searchInSocial {
@@ -197,11 +85,6 @@ body {
     border: 1px solid gray;
     color: white;
     width: 30rem;
-}
-
-#root {
-    background: rgb(1, 9, 33);
-    color: white !important;
 }
 
 #socialNavDiv {
@@ -267,12 +150,6 @@ body {
 .chat-message-section {
     height: 57%;
     background-color: #080d12;
-}
-
-.line {
-    height: 2px;
-    width: 100%;
-    background-color: #3b3838;
 }
 
 .chat-profile-img {
@@ -357,15 +234,7 @@ body {
 
 }
 
-.myFriend {
-    background-color: #1e2539;
-    padding: 2rem ;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-}
+
 
 #social-profile-image {
     background-color: black;
@@ -376,22 +245,8 @@ body {
     border: 3px solid #2c2c2c;
 }
 
-#inviteToWatch:hover {
-    background-color: #5a83a3;
-    color: black;
-    border: 2px solid #5a83a3;
-}
 
 #inviteToWatch {
-    background-color: black;
-    color: #5a83a3;
-    border: 2px solid #5a83a3;
-    padding: 0.8rem;
-    font-size: 0.8rem;
-    border-radius: 0.8rem;
-}
-
-#chat {
     background-color: #000410;
     color: #5a83a3;
     border: 2px solid #5a83a3;
@@ -412,13 +267,100 @@ body {
     background-color: #5a83a3;
 
 }
+.myFriend {
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 1.5rem;
+    text-align: center;
+    height: 17rem;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 1rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.myFriend p{
+    font-size:smaller;
+    color: rgb(162, 160, 160);
+}
+#inviteToWatch {
+    background-color: #5a83a3;
+    color: white;
+    border: 1px solid #c6c6c6;
+    font-size: 0.8rem;
+    border-radius: 0.8rem;
+    width: 91%;
+    height: 20%;
+    font-weight: 800;
+}
 
-#social-profile-image {
-    background-color: black;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1rem;
+.invitationDiv{
+    width: 30rem;
+    display: flex;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4a4a4a;
     padding: 1rem;
-    border: 3px solid #2c2c2c;
+    border-radius: 20px;
+}
+.butDivAR{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+#reject-btn {
+    width: 35%;
+    height: 60%;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+}
+#accept-btn {
+    width: 35%;
+    height: 60%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background: #517692;
+}
+
+.detailInvitation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73%;
+}
+.detailDiv{
+    width: 100%;
+    height: 100%;
+}
+.detailIn {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6%;
+}
+.invitationImage {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 43px;
+}
+.invitationPtag {
+    color: dimgray;
+    font-size: smaller;
+    margin-top: 0.6rem;
+}
+#pendingMain {
+    margin: 1rem;
 }

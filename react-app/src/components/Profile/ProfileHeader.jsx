@@ -1,22 +1,25 @@
 import StatsBar from "./StatsBar.jsx";
 import Button from "../Login-SignIn/Button.jsx";
+import def from '../../assets/onnapak.png'
+import { UserContext } from "../Login-SignIn/UserContext";
+import { use, useContext } from "react";
 
 export default function ProfileHeader() {
+  const {user,changeUser} = useContext(UserContext);
   return (
     <section className="profile-header">
       <div className="profile-info">
         <div className="profile-section">
         <div className="avatar" >
-            <div className="imageholder"></div>
+            <div className="imageholder" style={{backgroundImage:`url(${def})`}}></div>
         </div>
         {/* <span className="pro-badge">PRO</span> */}
-        <h3>Vijxy_R_7</h3>
+        <h3>{user.username}</h3>
 
         </div>
-
         <div className="Biodetails">
           <p className="tagline">
-            Curating the finest cinematic experiences.
+            {user.bio}
           </p>
           <StatsBar />
         </div>

@@ -128,18 +128,29 @@ console.log(check);
 					res.writeHead(400, { "Content-Type": "application/json" });
 					return res.end(JSON.stringify({ message: "username, friendname are required" }));	
 				}
-
+				const fromUser = await zcql.executeZCQLQuery(
+					`SELECT ROWID FROM users WHERE username='${friendname}'`
+				  );
+				  
+				  const toUser = await zcql.executeZCQLQuery(
+					`SELECT ROWID FROM users WHERE username='${username}'`
+				  );
+				  
+				  if (!fromUser.length || !toUser.length) {
+					throw new Error("User not found");
+				  }
+				  
+	
 				await zcql.executeZCQLQuery(
 					`DELETE FROM FriendRequest
-					 WHERE from_person_id=(SELECT ROWID FROM users WHERE username='${friendname}')
-					 AND to_person_id=(SELECT ROWID FROM users WHERE username='${username}')
-					 AND status=false`
+					WHERE from_person_id=${fromUser[0].users.ROWID}
+					AND to_person_id=${toUser[0].users.ROWID}
+					AND status=false`
 				  );
 		  
 				  return res.end(JSON.stringify({ message: "Friend request rejected" }));
 		  
 			}
-
 
 			//accept the request
 			if(req.url.endsWith("/acceptRequest")){

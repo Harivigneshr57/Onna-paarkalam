@@ -25,7 +25,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: -3;
+    z-index: 0;
 
 }
 
@@ -40,19 +40,13 @@
     color: #0c5e9c;
 }
 
-#singleBottomDiv {
-    width: 100%;
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    height: 2rem;
-    transition: .4s all ease-in-out;
-}
 
 #content_single {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
+    z-index: 5;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
@@ -100,6 +94,24 @@
 }
 
 #singleBottomDiv:hover, #singleBottomDiv:focus-within{
-    height: 30rem;
+    height: 22rem;
     
 }
+/* // */
+#singleBottomDiv {
+    transition: .4s all ease-in-out;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
+    padding: 1rem;
+    overflow-x: auto;
+}
+#singleBottomDiv::-webkit-scrollbar {
+    display: none;
+  }
+ #singleTop {
+    color: white;
+    font-size: 2rem;
+}
+

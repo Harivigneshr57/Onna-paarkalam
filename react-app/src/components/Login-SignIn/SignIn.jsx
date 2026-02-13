@@ -3,17 +3,38 @@ import logo from "../../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import { useState,useContext } from "react";
-import Msg from "./ErrorMsg";
 import { UserContext } from "./UserContext";
+import toast from "react-hot-toast";
 
 export default function SignIn() {
     const [username,setName] = useState('');
     const [password,setPassword] = useState('');
-    const [showMsg, setShowMsg] = useState(false);
-    const [style, setStyle] = useState(false);
-    const [title, setTitle] = useState("");
-    const [error, setError] = useState("");
     const {user,changeUser} = useContext(UserContext);
+    const toastErrorStyle = {
+      style: {
+        borderRadius: "1rem",
+        background: "var(--error)",
+        color: "white",
+        fontWeight: 600,
+        minWidth: "26rem",   
+      },
+      iconTheme: {
+        primary: "white",
+        secondary: "var(--white)",
+      },
+    };
+    const toastSuccessStyle = {
+      style: {
+        borderRadius: "1rem",
+        background: "#16A34A",
+        color: "white",
+        fontWeight: 600
+      },
+      iconTheme: {
+        primary: "white",
+        secondary: "#16A34A"
+      }
+    };
     async function signIn() {
         console.log("Hiii");
         let data;
@@ -37,39 +58,28 @@ export default function SignIn() {
       
           console.log("Signin response:", data);
       
-          if (data.message == "User not found") {
-            setStyle(false);
-            errorMsg("LOGIN FAILED!!","User not found");
+          if (data.message == "User not found") { 
+            toast.error("Login Failed, No user Found !!",toastErrorStyle)
             return;
           }
           if(data.message == "Invalid password"){
-            setStyle(false);
-            errorMsg("LOGIN FAILED!!","Invalid Password")
+            toast.error("Login Failed, InValid Password !!",toastErrorStyle)
             return
           }
           if(data.message == "Login successful"){
-            setStyle(true);
-            changeUser(data.id,data.username);
-            errorMsg("Login Successful!!","");
+            localStorage.setItem('Username',data.username)
+            changeUser(data.id,data.username,data.bio);
+            toast.success("Login Successful !!",toastSuccessStyle)
             home();
           }
           else{
-            setStyle(false);
-            errorMsg("Server Error","Try Again Later")
+            toast.error('Server Error, Try Later !!',toastErrorStyle)
           }
       
         } catch (err) {
-            setStyle(false);
-            errorMsg("Server Error","Try Again Later")
+          toast.error('Server Error, Try Later !!',toastErrorStyle)
         }
       }
-
-    function errorMsg(title,error){
-        setTitle(title);
-        setError(error);
-        setShowMsg(true);
-        setTimeout(() => setShowMsg(false), 2000);
-    }
       
     let navigate = useNavigate();
     function navigates(){
@@ -80,13 +90,11 @@ export default function SignIn() {
     }
     function signInCheck(){
         if(username.length == 0){
-            setStyle(false);
-            errorMsg("Invalid Email!!","Email Required");
+          toast.error('InValid UserName, UserName Required !!',toastErrorStyle)
             return;
         }
         else if(password.length == 0){
-            setStyle(false);
-            errorMsg("Invalid Password!!","Password Required");
+          toast.error('InValid Password, Password Required !!',toastErrorStyle)
             return;
         }
         signIn();
@@ -116,7 +124,6 @@ export default function SignIn() {
                 <p className="new-user">New here? <span id="join" onClick={navigates}>Join the club</span></p>
             </div>
         </main>
-        <Msg show={showMsg} title={title} error={error} style={style}></Msg>
         </>
     );
 }
